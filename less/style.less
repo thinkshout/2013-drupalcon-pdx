@@ -12,6 +12,14 @@ body {
 /* ===== Primary Styles ========================================================
    Author: Thinkshout/SuperstarMedia, 2012
    ========================================================================== */
+//mixins
+.visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
+}
 
 // vars
 @greenblue: #2C4B57;
@@ -101,5 +109,47 @@ body {
 .drop {
   img {
     margin: 0 auto;
+  }
+}
+
+#features {
+  float:right;
+  width:30%;
+  margin-top: -40px;
+  position:relative;
+  z-index: 9999;
+  ul li {
+    float: left;
+    list-style: none;
+    width: 73px;
+    height: 74px;
+    display: block;
+    margin: 0 -5px;
+    a {
+      width: 73px;
+      height: 74px;
+      display: block;
+      span {
+        .visuallyhidden;
+      }
+    }
+  }
+  #feature1 {
+    background: url('../img/f1.png');
+  }
+  #feature2 {
+    background: url('../img/f2.png');
+  }
+  #feature3 {
+    background: url('../img/f3.png');
+  }
+  #feature4 {
+    background: url('../img/f4.png');
+  }
+  #feature5 {
+    background: url('../img/f5.png');
+  }
+  #feature6 {
+    background: url('../img/f6.png');
   }
 }
