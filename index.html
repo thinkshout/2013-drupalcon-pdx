@@ -15,7 +15,7 @@
 
 	<link rel="stylesheet/less" href="less/style.less">
 	<script src="js/libs/less-1.2.1.min.js"></script>
-	
+
 	<!-- Use SimpLESS (Win/Linux/Mac) or LESS.app (Mac) to compile your .less files
 	to style.css, and replace the 2 lines above by this one:
 
@@ -27,26 +27,23 @@
 <body>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
-<div container-wrapper>
+<div class="container-wrapper">
 
-  <div id="farHills">
-    <div id="stHelens">
-      <div id="mtHood">
+  <div id="mountains">
+    <div id="mtHood">
+      <div id="farHills">
 
-      </div>
-    </div>
+        <div class="container">
+          <div class="row">
+            <p style="height:1000px;">content goes here</p>
+         </div>
+        </div> <!-- /container -->
 
-  </div>
-  
-  <div class="container">
-    <div class="row">
+      </div> <!-- /mtHood -->
+    </div> <!-- /stHelens -->
+  </div> <!-- /farHill -->
+</div> <!-- /container-wrapper -->
 
-      <p>content goes here</p>
-
-   </div>
-  </div> <!-- /container -->
-</div>
-    
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
