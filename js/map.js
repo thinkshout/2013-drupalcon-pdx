@@ -6,11 +6,13 @@ var features = {
   feature1: {
     lat: 45.53,
     lon: -122.55,
+    zoom: 10,
     popup: 'This is some cool stuff'
   },
   feature2: {
     lat: 45.49,
     lon: -122.7,
+    zoom: 13,
     popup: 'This is some MORE cool stuff'
   }
 };
@@ -31,21 +33,24 @@ jQuery(document).ready(function() {
   var pdx = new L.LatLng(45.5236111, -122.675);
   map.setView(pdx, 13).addLayer(mapquest);
 
-  // loop through each feature and set popup
-  for (var id in features) {
-    var feature = features[id];
-    var marker = new L.Marker(new L.LatLng(feature.lat, feature.lon));
-    marker.bindPopup(feature.popup);
-    marker._leaflet_id = id;
-    map.addLayer(marker);
-  }
-
   // click handler for dom elements
   jQuery('#features a').click(function() {
+    for(var layer_id in map._layers) {
+      var layer = map._layers[layer_id];
+      if (layer._content) {
+        map.removeLayer(layer);
+      }
+    }
+
     var id = jQuery(this).attr('id');
-    var latlon = new L.LatLng(features[id].lat, features[id].lon)
-    map.panTo(latlon);
-    map._layers[id].openPopup();
+    var feature = features[id];
+    var latlon = new L.LatLng(feature.lat, feature.lon);
+    var marker = new L.Marker(latlon);
+    marker._leaflet_id = id;
+    map.addLayer(marker);
+    marker.bindPopup(feature.popup).openPopup();
+    map.setView(latlon, feature['zoom']);
+
     return false;
   });
 });
