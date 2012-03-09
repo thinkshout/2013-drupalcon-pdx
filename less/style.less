@@ -1,5 +1,5 @@
 @import "bootstrap/bootstrap.less";
-@i	;
+@import "../fonts/stylesheet.less";
 
 body {
   /*padding-top: 60px;
@@ -20,7 +20,7 @@ img{
 	display: block;
 }
 body {
-  background: url('../img/sky.png') repeat-x top left;
+  background: #479fb5 url('../img/sky.png') repeat-x top left;
 }
 .main{
 	padding-top: 105px;
@@ -65,8 +65,14 @@ body {
 	}
 	h2{
 		color: @white;
-		font-size: @baseFontSize * 4;
-		line-height: @baseFontSize * 4;
+		font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
+		font-size: @baseFontSize * 2;
+		line-height: @baseLineHeight * 2;
+		font-weight: normal;
+		.portland{
+			font-size: @baseFontSize * 4;
+			line-height: @baseLineHeight * 4;
+		}
 	}
 }
 
