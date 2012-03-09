@@ -1,5 +1,7 @@
 var map;
 
+// Features collection. The key needs to match the ID of the corresponding
+// dom element
 var features = {
   feature1: {
     lat: 45.53,
@@ -19,16 +21,17 @@ jQuery(document).ready(function() {
     scrollWheelZoom: false
   });
 
+  // using MapQuest base layer
   var mapquest = new L.TileLayer('http://otile{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png', {
-    attribution: 'MapQuest',
     maxZoom: 18,
     subdomains: '1234'
   });
 
+  /// center map and set view to middle of Portland
   var pdx = new L.LatLng(45.5236111, -122.675);
   map.setView(pdx, 13).addLayer(mapquest);
 
-
+  // loop through each feature and set popup
   for (var id in features) {
     var feature = features[id];
     var marker = new L.Marker(new L.LatLng(feature.lat, feature.lon));
@@ -37,6 +40,7 @@ jQuery(document).ready(function() {
     map.addLayer(marker);
   }
 
+  // click handler for dom elements
   jQuery('#features a').click(function() {
     var id = jQuery(this).attr('id');
     var latlon = new L.LatLng(features[id].lat, features[id].lon)
