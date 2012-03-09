@@ -1,4 +1,5 @@
 var map;
+var activeFeature = null;
 
 // Features collection. The key needs to match the ID of the corresponding
 // dom element
@@ -35,14 +36,22 @@ jQuery(document).ready(function() {
 
   // click handler for dom elements
   jQuery('#features a').click(function() {
+    var id = jQuery(this).attr('id');
+
+    // clicking the same element twice
+    if (id == activeFeature) {
+      return false;
+    }
+
+    // clear active feature
     for(var layer_id in map._layers) {
       var layer = map._layers[layer_id];
-      if (layer._content) {
+      if (layer._leaflet_id == activeFeature) {
         map.removeLayer(layer);
       }
     }
 
-    var id = jQuery(this).attr('id');
+    // create marker, bind popup, and set mapview
     var feature = features[id];
     var latlon = new L.LatLng(feature.lat, feature.lon);
     var marker = new L.Marker(latlon);
@@ -51,6 +60,8 @@ jQuery(document).ready(function() {
     marker.bindPopup(feature.popup).openPopup();
     map.setView(latlon, feature['zoom']);
 
+    // set active feature
+    activeFeature = id;
     return false;
   });
 });
