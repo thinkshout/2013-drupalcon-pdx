@@ -1,5 +1,5 @@
 @import "bootstrap/bootstrap.less";
-@import "../fonts/stylesheet.css";
+@import "../fonts/stylesheet.less";
 
 body {
   /*padding-top: 60px;
@@ -12,6 +12,9 @@ body {
 /* ===== Primary Styles ========================================================
    Author: Thinkshout/SuperstarMedia, 2012
    ========================================================================== */
+
+// vars
+@greenblue: #2C4B57;
 
 img{
 	display: block;
@@ -53,4 +56,8 @@ body {
 .announcement{
 	font-family:'LeagueGothicRegular', Arial, sans-serif;
 	text-transform: uppercase;
+
+	h1{
+		color: @greenblue;
+	}
 }
