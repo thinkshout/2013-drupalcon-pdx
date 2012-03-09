@@ -20,7 +20,7 @@ img{
 	display: block;
 }
 body {
-  background: url('../img/sky.png') repeat-x top left;
+  background: #479fb5 url('../img/sky.png') repeat-x top left;
 }
 .main{
 	padding-top: 105px;
@@ -54,14 +54,43 @@ body {
 	font-family:'LeagueGothicRegular', Arial, sans-serif;
 	text-transform: uppercase;
 	padding-top: 210px;
-	padding-bottom: 40px;
+	padding-bottom: 12px;
+	background: url("../img/logo.png") left bottom no-repeat;
 
 	h1{
 		color: @greenblue;
-		font-size: @baseFontSize * 6.2;
-		line-height: @baseLineHeight * 6.2;
+		font-size: 110px;
+		line-height: 110px;
 		text-align: center;
 		letter-spacing: 1px;
+	}
+	h2{
+		color: @white;
+		font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
+		font-size: 36px;
+		line-height: 36px;
+		font-weight: normal;
+		float: left;
+		padding-left: 115px;
+
+		text-shadow: 0px 0px 5px @greenblue;
+		.con{
+			letter-spacing: 10px;
+		}
+		.portland{
+			font-size: 70px;
+			line-height: 70px;
+		}
+	}
+	h3{
+		float: right;
+		color: @white;
+		font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
+		font-size: 126px;
+		line-height: 106px;
+		font-weight: normal;
+		letter-spacing: -5px;
+		text-shadow: 0px 0px 5px @greenblue;
 	}
 }
 
