@@ -5,38 +5,38 @@ var activeFeature = null;
 // dom element
 var features = {
   feature1: {
-    lat: 45.53,
-    lon: -122.55,
-    zoom: 10,
+    lat: 45.5236111,
+    lon: -122.675,
+    zoom: 8,
     popup: '<div class="feature1"><div class="pdx-warning">You are headed to Portland. You should know:</div><img class="pdx-photo" src="" /><div class="pdx-fact">It\'s illegal to pump your own gas in Oregon, as well as to used canned corn as fish bate, or box with a kangaroo. Also, it\'s illegal to possess an uncured animal hide in Portland city limits, or to whistle under water. You\'ve been warned.</div></div>'
   },
   feature2: {
-    lat: 45.49,
-    lon: -122.7,
-    zoom: 13,
+    lat: 45.5163715505381,
+    lon: -122.629707282185,
+    zoom: 15,
     popup: '<div class="feature2"><div class="pdx-warning">You are headed to Portland. You should know:</div><img class="pdx-photo" src="" /><div class="pdx-fact">There\'s no sales tax in Oregon, which is good, because we aren\'t particularly good at math. We are good at riding bikes.</div></div>'
   },
   feature3: {
-    lat: 46.49,
-    lon: -122.7,
+    lat: 45.52268014994,
+    lon: -122.673152182496,
     zoom: 13,
     popup: '<div class="feature3"><div class="pdx-warning">You are headed to Portland. You should know:</div><img class="pdx-photo" src="" /><div class="pdx-fact">We eat a lot of Voodoo Donuts and drink a lot of Stumptown Coffee - but it doesn\'t show. Also, we can drink beer at our movie theaters.</div></div>'
   },
   feature4: {
-    lat: 47.49,
-    lon: -122.7,
-    zoom: 13,
+    lat: 45.513464910352276,
+    lon: -122.67119884490964,
+    zoom: 14,
     popup: '<div class="feature4"><div class="pdx-warning">You are headed to Portland. You should know:</div><img class="pdx-photo" src="" /><div class="pdx-fact">Portland was not, in fact, discovered by Lewis and Clarke. It was discovered by a lot of Californians who got tired of Bay Area traffic and high housing costs.</div></div>'
   },
   feature5: {
-    lat: 48.49,
-    lon: -122.7,
-    zoom: 13,
+    lat: 45.51182053454101,
+    lon: -122.62604713439943,
+    zoom: 14,
     popup: '<div class="feature5"><div class="pdx-warning">You are headed to Portland. You should know:</div><img class="pdx-photo" src="" /><div class="pdx-fact">PDX is the 23rd largest city in the U.S, but we drink more locally brewed beer than any city in the world (trust us, we\'re drinking right now).</div></div>'
   },
   feature6: {
-    lat: 49.49,
-    lon: -122.7,
+    lat: 45.563102450326845,
+    lon: -122.63527393341064,
     zoom: 13,
     popup: '<div class="feature6"><div class="pdx-warning">You are headed to Portland. You should know:</div><img class="pdx-photo" src="" /><div class="pdx-fact">Portland is not the capital of Oregon, but it is the capital of the Hipster phenomenon. (Not Brooklyn or Austin - just count our mustaches and tattoos.) Also, Oregon residents own 1/4th of the U.S.\' llama population.</div></div>'
   }
@@ -56,7 +56,7 @@ jQuery(document).ready(function() {
 
   /// center map and set view to middle of Portland
   var pdx = new L.LatLng(45.5236111, -122.675);
-  map.setView(pdx, 13).addLayer(mapquest);
+  map.setView(pdx, 5).addLayer(mapquest);
 
   // click handler for dom elements
   jQuery('#features a').click(function() {
@@ -88,4 +88,17 @@ jQuery(document).ready(function() {
     activeFeature = id;
     return false;
   });
+
+  jQuery(window).resize(function() {
+    setMapHeight();
+  });
+  setMapHeight();
 });
+
+function setMapHeight() {
+  var winHeight = jQuery(window).height();
+  var mainHeight = jQuery('.main').height();
+  if (winHeight > mainHeight) {
+    jQuery('#map').height(winHeight - mainHeight);
+  }
+}
