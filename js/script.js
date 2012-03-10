@@ -15,12 +15,39 @@ $(document).ready(function() {
       .text('onBlockChange | blockIndex:'+i+' | current block: '+scrollorama.settings.blocks.eq(i).attr('id'));
   });
 
-  scrollorama.animate('#biker',
+  scrollorama.animate('#biker-1',
     {
-      delay:100,
-      duration:300,
-      property:'left',
+      delay:0,
+      duration:800,
+      property:'background-position-x',
       start:$(window).width(),
+      end:0
+    }
+  );
+  scrollorama.animate('#biker-2',
+    {
+      delay:0,
+      duration:500,
+      property:'background-position-x',
+      start:$(window).width(),
+      end:0
+    }
+  );
+  scrollorama.animate('#biker-3',
+    {
+      delay:50,
+      duration:500,
+      property:'background-position-x',
+      start:$(window).width(),
+      end:0
+    }
+  );
+  scrollorama.animate('#lift',
+    {
+      delay:0,
+      duration:300,
+      property:'top',
+      start:297,
       end:0
     }
   );
