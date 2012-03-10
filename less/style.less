@@ -9,7 +9,6 @@ body {
 
 
 
-
 /* ===== Primary Styles ========================================================
    Author: Thinkshout/SuperstarMedia, 2012
    ========================================================================== */
@@ -21,103 +20,102 @@ body {
   height: 1px; width: 1px;
   margin: -1px; padding: 0; border: 0;
 }
+.test{}
 
 // vars
-@greenblue: #2C4B57;
+@greenblue: #084E53;
 
 img{
 	display: block;
 }
 body {
-  background: #479fb5 url('../img/sky.png') repeat-x top left;
-}
-.main{
-	padding-top: 105px;
-	height: 1000px;
-}
-
-#container-wrapper {
-  position: relative;
-}
-#farHills {
-  background: url('../img/far-hills.png') center 175px repeat-x;
-}
-#forest {
-  background: url('../img/forest.png') center 195px repeat-x;
-}
-#city {
-  background: url('../img/total-ground.png') center 215px repeat-x;
-}
-#clouds{
-  background: url('../img/clouds.png') repeat-x -5% 10px;
+  background: #d9f2f2 url('../img/sky.png') left -50px repeat-x;
 }
 #mountains {
   background-image: url('../img/sthelens.png'), url('../img/hood.png');
-  background-position: 10% 105px, 110% 105px;
+  background-position: 5% 130px, 110% 155px;
   background-repeat: no-repeat;
+  position: relative;
+}
+#clouds{
+  background: url('../img/clouds.png') repeat-x 250% 40px;
+}
+#farHills {
+  background: url('../img/far-hills.png') center 225px repeat-x;
+}
+#forest {
+  background: url('../img/forest.png') center 245px repeat-x;
+}
+#water {
+  background: url('../img/water.png') center 380px repeat-x;
+}
+#city {
+  background: url('../img/total-ground.png') center 279px repeat-x;
 }
 #bridge {
-  background: url('../img/steel-bridge.png') no-repeat center 50px;
+  background: url('../img/steel-bridge.png') no-repeat center 100px;
 }
+
+.main{
+	height: 1000px;
+}
+
 .announcement{
-	font-family:'LeagueGothicRegular', Arial, sans-serif;
-	text-transform: uppercase;
-	padding-top: 210px;
-	padding-bottom: 12px;
+  font-family:'LeagueGothicRegular', Arial, sans-serif;
+  text-transform: uppercase;
+  padding-top: 210px;
+  padding-bottom: 12px;
 
-
-	h1{
-		color: @greenblue;
-		font-size: 110px; //110px
-		line-height: 110px;
-		text-align: center;
-		letter-spacing: 1px;
-	}
-	h2{
-		color: @white;
-		font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
-		font-size: 36px;
-		line-height: 36px;
-		font-weight: normal;
-		padding-left: 115px;
-		background: url("../img/logo.png") left bottom no-repeat;
-		text-shadow: 0px 0px 5px @greenblue;
-		padding-top:20px;
-		margin-left: 200px;
-		.clearfix;
-		& span{
-			display: block;
-		}
-		.con{
-			letter-spacing: 10px;
-			float: left;
-		}
-		.portland{
-			font-size: 70px;
-			line-height: 70px;
-			float: left;
-			clear: left;
-		}
-		.year{
-			float: left;
-			color: @white;
-			font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
-			font-size: 126px;
-			line-height: 106px;
-			font-weight: normal;
-			letter-spacing: -5px;
-			text-shadow: 0px 0px 5px @greenblue;
-			margin-top: -40px;
-		}
-	}
-
-}
-
-#water {
-  background: url('../img/water.png') center 310px repeat-x;
-}
+  h1{
+    color: @greenblue;
+    font-size: 110px; //110px
+    line-height: 110px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: normal;
+  }
+  h2{
+    color: @white;
+    font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: normal;
+    padding-left: 115px;
+    background: url("../img/logo.png") left bottom no-repeat;
+    text-shadow: 0px 0px 5px @greenblue;
+    padding-top:20px;
+    width: 660px;
+    margin: 0 auto;
+    .clearfix;
+    & span{
+      display: block;
+    }
+    .con{
+      letter-spacing: 10px;
+      float: left;
+    }
+    .portland{
+      font-size: 70px;
+      line-height: 70px;
+      float: left;
+      clear: left;
+    }
+    .year{
+      float: left;
+      color: @white;
+      font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
+      font-size: 126px;
+      line-height: 106px;
+      font-weight: normal;
+      letter-spacing: -5px;
+      text-shadow: 0px 0px 5px @greenblue;
+      margin-top: -40px;
+    } //year
+  } //h2
+} //announcement
 
 .drop {
+  padding-top: 105px;
   img {
     margin: 0 auto;
   }
