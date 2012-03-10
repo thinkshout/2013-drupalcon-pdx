@@ -35,7 +35,6 @@ body {
   background-image: url('../img/sthelens.png'), url('../img/hood.png');
   background-position: 5% 130px, 110% 155px;
   background-repeat: no-repeat;
-  position: relative;
 }
 #clouds{
   background: url('../img/clouds.png') repeat-x 250% 40px;
@@ -140,15 +139,19 @@ body {
   opacity: .8;
 }
 #biker{
-	position: relative;
+	position: absolute;
 	bottom: 0;
-	left: 0;
+	left: 1200px;
 	height: 100px;
 	width: 100px;
-	background: black;
+	background: url("../img/bike-100.png") 100% 0 no-repeat;
 	opacity: 1;
 }
-
+#lift{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
 #features {
   float:right;
   margin-top: -40px;
@@ -192,5 +195,5 @@ body {
 
 #map {
   width: 100%;
-  min-height: 800px;
+  min-height: 400px;
 }

@@ -15,7 +15,15 @@ $(document).ready(function() {
       .text('onBlockChange | blockIndex:'+i+' | current block: '+scrollorama.settings.blocks.eq(i).attr('id'));
   });
 
-  scrollorama.animate('#biker',{ duration: 50, property:'left', start:-100, end:0 });
+  scrollorama.animate('#biker',
+    {
+      delay:100,
+      duration:300,
+      property:'left',
+      start:$(window).width(),
+      end:0
+    }
+  );
 
 
   console.log('hello');
