@@ -125,7 +125,14 @@
 
 @media (max-width: 768px) {
   .announcement {
-    background: orange !important;
+    background: none !important;
+    h1 {
+      font-size: 88px; //110px
+      line-height: 110px;
+      span {
+        font-size: 120px;
+      }
+    }
   }
   // GRID & CONTAINERS
   // -----------------
@@ -166,6 +173,19 @@
 @media (min-width: 768px) and (max-width: 980px) {
   .announcement {
     background: yellow !important;
+    h1 {
+      font-size: 107px;
+      line-height: 110px;
+      span {
+        font-size: 107px;
+      }
+    }
+    h2 {
+      .year {
+         font-size: 114px;
+         line-height: 106px;
+      }
+    }
   }
   // Fixed grid
   #gridSystem > .generate(12, 42px, 20px);
@@ -213,6 +233,18 @@
     background-position: 5% 130px, 110% 155px;
     background-repeat: no-repeat;
     position: relative;
+  }
+  .announcement {
+    h1 {
+    font-size: 110px; //110px
+    line-height: 110px;
+    }
+    h2 {
+      .year{
+        font-size: 126px;
+        line-height: 106px;
+      } //year
+    }
   }
 }
 
