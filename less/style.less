@@ -1,12 +1,13 @@
 @import "bootstrap/bootstrap.less";
 @import "../fonts/stylesheet.less";
+@import "bootstrap/responsive.less";
 
 body {
   /*padding-top: 60px;
   padding-bottom: 40px;*/
 }
 
-@import "bootstrap/responsive.less";
+
 
 
 /* ===== Primary Styles ========================================================
@@ -78,30 +79,38 @@ body {
 		font-size: 36px;
 		line-height: 36px;
 		font-weight: normal;
-		float: left;
 		padding-left: 115px;
-		padding-top: 20px;
 		background: url("../img/logo.png") left bottom no-repeat;
-
 		text-shadow: 0px 0px 5px @greenblue;
+		padding-top:20px;
+		margin-left: 200px;
+		.clearfix;
+		& span{
+			display: block;
+		}
 		.con{
 			letter-spacing: 10px;
+			float: left;
 		}
 		.portland{
 			font-size: 70px;
 			line-height: 70px;
+			float: left;
+			clear: left;
+		}
+		.year{
+			float: left;
+			color: @white;
+			font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
+			font-size: 126px;
+			line-height: 106px;
+			font-weight: normal;
+			letter-spacing: -5px;
+			text-shadow: 0px 0px 5px @greenblue;
+			margin-top: -40px;
 		}
 	}
-	h3{
-		float: right;
-		color: @white;
-		font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
-		font-size: 126px;
-		line-height: 106px;
-		font-weight: normal;
-		letter-spacing: -5px;
-		text-shadow: 0px 0px 5px @greenblue;
-	}
+
 }
 
 #water {
