@@ -15,25 +15,25 @@ var features = {
     lon: -122.7,
     zoom: 13,
     popup: '<div class="feature2"><div class="pdx-warning">You are headed to Portland. You should know:</div><img class="pdx-photo" src="" /><div class="pdx-fact">There\'s no sales tax in Oregon, which is good, because we aren\'t particularly good at math. We are good at riding bikes.</div></div>'
-  }
+  },
   feature3: {
     lat: 46.49,
     lon: -122.7,
     zoom: 13,
     popup: '<div class="feature3"><div class="pdx-warning">You are headed to Portland. You should know:</div><img class="pdx-photo" src="" /><div class="pdx-fact">We eat a lot of Voodoo Donuts and drink a lot of Stumptown Coffee - but it doesn\'t show. Also, we can drink beer at our movie theaters.</div></div>'
-  }
+  },
   feature4: {
     lat: 47.49,
     lon: -122.7,
     zoom: 13,
     popup: '<div class="feature4"><div class="pdx-warning">You are headed to Portland. You should know:</div><img class="pdx-photo" src="" /><div class="pdx-fact">Portland was not, in fact, discovered by Lewis and Clarke. It was discovered by a lot of Californians who got tired of Bay Area traffic and high housing costs.</div></div>'
-  }
+  },
   feature5: {
     lat: 48.49,
     lon: -122.7,
     zoom: 13,
     popup: '<div class="feature5"><div class="pdx-warning">You are headed to Portland. You should know:</div><img class="pdx-photo" src="" /><div class="pdx-fact">PDX is the 23rd largest city in the U.S, but we drink more locally brewed beer than any city in the world (trust us, we\'re drinking right now).</div></div>'
-  }
+  },
   feature6: {
     lat: 49.49,
     lon: -122.7,
