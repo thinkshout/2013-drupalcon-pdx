@@ -13,14 +13,13 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet/less" href="less/style.less">
-	<script src="js/libs/less-1.2.1.min.js"></script>
+  <link rel="stylesheet/less" href="less/style.less">
+	<script src="js/libs/less-1.2.2.min.js"></script>
 
 	<!-- Use SimpLESS (Win/Linux/Mac) or LESS.app (Mac) to compile your .less files
-	to style.css, and replace the 2 lines above by this one:
+	to style.css, and replace the 2 lines above by this one: -->
 
-	<link rel="stylesheet/less" href="less/style.css">
-	 -->
+	<!-- <link rel="stylesheet" href="less/style.css"> -->
 
   <link rel="stylesheet" href="http://code.leafletjs.com/leaflet-0.3.1/leaflet.css" />
 
@@ -29,7 +28,7 @@
 <body>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
-  <div id="mountains">
+  <div id="mountains scrollblock">
     <div id="clouds">
         <div id="farHills">
           <div id="forest">
@@ -61,7 +60,9 @@
         </div> <!-- /forest -->
       </div><!-- /farhills -->
     </div> <!-- /clouds -->
+    <div id="biker"></div>
   </div> <!-- /mountains -->
+
 
   <div id="map"></div>
   <div id="features">
@@ -78,8 +79,10 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
-<script src="js/libs/bootstrap/transition.js"></script>
-<script src="js/libs/bootstrap/collapse.js"></script>
+<!-- <script src="js/libs/bootstrap/transition.js"></script>
+<script src="js/libs/bootstrap/collapse.js"></script> -->
+
+<script src="js/libs/scrollorama/js/jquery.scrollorama.js"></script>
 
 <script src="js/script.js"></script>
 
