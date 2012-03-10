@@ -39,6 +39,15 @@
   .announcement {
     background: red !important;
   }
+  .announcement {
+    h1 {
+      font-size: 74px; //110px
+      line-height: 85px;
+      span {
+        font-size: 96px;
+      }
+    }
+  }
   // Smooth out the collapsing/expanding nav
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0); // activate the GPU
@@ -125,12 +134,11 @@
 
 @media (max-width: 768px) {
   .announcement {
-    background: none !important;
     h1 {
-      font-size: 88px; //110px
-      line-height: 110px;
+      font-size: 74px; //110px
+      line-height: 85px;
       span {
-        font-size: 120px;
+        font-size: 96px;
       }
     }
   }
