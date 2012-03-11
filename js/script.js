@@ -51,7 +51,27 @@ $(document).ready(function() {
       duration:300,
       property:'top',
       start:liftTop,
-      end:0
+      end:250
+    }
+  );
+
+  scrollorama.animate('#drop',
+    {
+      delay:0,
+      duration:300,
+      property:'top',
+      start:70,
+      end:600
+    }
+  );
+
+  scrollorama.animate('#announcement',
+    {
+      delay:0,
+      duration:300,
+      property:'top',
+      start:300,
+      end:600
     }
   );
 

@@ -23,6 +23,8 @@ body {
 .test{}
 // vars
 @greenblue: #084E53;
+@bridgepos:200px;
+@topsky: 150px; //used to shift all values from top to make large adjustments easier
 
 img{
 	display: block;
@@ -32,47 +34,59 @@ body {
 }
 #mountains {
   background-image: url('../img/sthelens.png'), url('../img/hood.png');
-  background-position: 5% 130px, 110% 155px;
+  background-position: 5% @topsky+30, 110% @topsky+55;
   background-repeat: no-repeat;
 }
 #clouds{
-  background: url('../img/clouds.png') repeat-x 250% 40px;
+  background: url('../img/clouds.png') repeat-x 250% @topsky - 60;
 }
 #farHills {
-  background: url('../img/far-hills.png') center 225px repeat-x;
+  background: url('../img/far-hills.png') center @topsky+125 repeat-x;
 }
 #forest {
-  background: url('../img/forest.png') center 245px repeat-x;
+  background: url('../img/forest.png') center @topsky+145 repeat-x;
 }
 #water {
-  background: url('../img/water.png') center 380px repeat-x;
+  background: url('../img/water.png') center @topsky+291 repeat-x;
 }
 #city {
-  background: url('../img/total-ground.png') center 279px repeat-x;
+  background: url('../img/total-ground.png') center @topsky+179 repeat-x;
+}
+#drop {
+  position: relative;
+  width: 264px;
+  height: 291px;
+  margin: 0 auto;
+  top: @topsky - 30;
+  z-index: 50;
+  img {
+    margin: 0 auto;
+  }
 }
 
-@bridgepos:100px;
 #bridge {
-  background: url('../img/steel-bridge.png') no-repeat center @bridgepos;
+  background: url('../img/steel-bridge.png') no-repeat center @topsky+75;
 }
 #lift{
   left: 50%;
-  top: @bridgepos+162;
+  top: @topsky+237;
   position: absolute;
   width: 342px;
   height: 240px;
   background: url("../img/lift.png") 0 0 no-repeat;
   margin-left: -176px;
+  z-index: 75;
 }
 .main{
-	height: 1000px;
+	height: 1300px;
 }
 
-.announcement{
+#announcement{
   font-family:'LeagueGothicRegular', Arial, sans-serif;
   text-transform: uppercase;
-  padding-top: 160px;
+  top: @topsky+600;
   padding-bottom: 12px;
+  position: relative;
   h1{
     color: @greenblue;
     text-align: center;
@@ -117,12 +131,7 @@ body {
   } //h2
 } //announcement
 
-.drop {
-  padding-top: 105px;
-  img {
-    margin: 0 auto;
-  }
-}
+
 .scrollblock{
   position: relative;
 }
