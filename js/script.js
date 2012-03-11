@@ -17,29 +17,29 @@ $(document).ready(function() {
 
   scrollorama.animate('#biker-1',
     {
-      delay:0,
-      duration:800,
+      delay:300,
+      duration:1200,
       property:'background-position-x',
       start:$(window).width(),
-      end:0
+      end:-100
     }
   );
   scrollorama.animate('#biker-2',
     {
-      delay:0,
-      duration:500,
+      delay:200,
+      duration:700,
       property:'background-position-x',
       start:$(window).width(),
-      end:0
+      end:-100
     }
   );
   scrollorama.animate('#biker-3',
     {
-      delay:50,
-      duration:500,
+      delay:350,
+      duration:600,
       property:'background-position-x',
       start:$(window).width(),
-      end:0
+      end:-100
     }
   );
 
@@ -58,7 +58,7 @@ $(document).ready(function() {
   scrollorama.animate('#drop',
     {
       delay:0,
-      duration:300,
+      duration:400,
       property:'top',
       start:70,
       end:600
@@ -70,7 +70,7 @@ $(document).ready(function() {
       delay:0,
       duration:300,
       property:'top',
-      start:300,
+      start:450,
       end:600
     }
   );

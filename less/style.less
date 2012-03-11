@@ -2,12 +2,6 @@
 @import "../fonts/stylesheet.less";
 @import "bootstrap/responsive.less";
 
-body {
-  /*padding-top: 60px;
-  padding-bottom: 40px;*/
-}
-
-
 
 /* ===== Primary Styles ========================================================
    Author: Thinkshout/SuperstarMedia, 2012
@@ -20,7 +14,6 @@ body {
   height: 1px; width: 1px;
   margin: -1px; padding: 0; border: 0;
 }
-.test{}
 // vars
 @greenblue: #084E53;
 @bridgepos:200px;
@@ -36,6 +29,7 @@ body {
   background-image: url('../img/sthelens.png'), url('../img/hood.png');
   background-position: 5% @topsky+30, 110% @topsky+55;
   background-repeat: no-repeat;
+  border-bottom: 2px dotted black;
 }
 #clouds{
   background: url('../img/clouds.png') repeat-x 250% @topsky - 60;
@@ -63,7 +57,6 @@ body {
     margin: 0 auto;
   }
 }
-
 #bridge {
   background: url('../img/steel-bridge.png') no-repeat center @topsky+75;
 }
@@ -80,7 +73,6 @@ body {
 .main{
 	height: 1300px;
 }
-
 #announcement{
   font-family:'LeagueGothicRegular', Arial, sans-serif;
   text-transform: uppercase;
@@ -89,6 +81,7 @@ body {
   position: relative;
   h1{
     color: @greenblue;
+    text-shadow: 0px 2px 3px #159ee2;
     text-align: center;
     letter-spacing: 1px;
     font-weight: normal;
@@ -151,18 +144,22 @@ body {
   z-index: 99;
   opacity: .8;
 }
+.bikes{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background: url("../img/railing.png") left bottom repeat-x;
+}
 .bike{
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	height: 100px;
-	width: 100%;
-	background: url("../img/bike-100.png") 0 0 no-repeat;
-	opacity: 1;
+  height: 100px;
+  width: 100%;
+	background: url("../img/bike-100.png") 0 bottom no-repeat;
 }
 
 #contact{
-  height: 400px;
+  height: 500px;
 }
 #features {
   float:right;
@@ -206,7 +203,7 @@ body {
 
 #map {
   width: 100%;
-  min-height: 400px;
+  min-height: 600px;
 }
 
 
