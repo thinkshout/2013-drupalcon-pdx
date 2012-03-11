@@ -47,7 +47,7 @@ $(document).ready(function() {
       delay:0,
       duration:300,
       property:'top',
-      start:297,
+      start:263,
       end:0
     }
   );
