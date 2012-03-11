@@ -42,12 +42,15 @@ $(document).ready(function() {
       end:0
     }
   );
+
+  var liftTop = parseInt($('#lift').css('top').replace("px", ""), 10);
+  console.log(liftTop);
   scrollorama.animate('#lift',
     {
       delay:0,
       duration:300,
       property:'top',
-      start:263,
+      start:liftTop,
       end:0
     }
   );

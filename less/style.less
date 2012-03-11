@@ -50,10 +50,20 @@ body {
 #city {
   background: url('../img/total-ground.png') center 279px repeat-x;
 }
-#bridge {
-  background: url('../img/steel-bridge.png') no-repeat center 100px;
-}
 
+@bridgepos:100px;
+#bridge {
+  background: url('../img/steel-bridge.png') no-repeat center @bridgepos;
+}
+#lift{
+  left: 50%;
+  top: @bridgepos+162;
+  position: absolute;
+  width: 342px;
+  height: 240px;
+  background: url("../img/lift.png") 0 0 no-repeat;
+  margin-left: -176px;
+}
 .main{
 	height: 1000px;
 }
@@ -141,15 +151,7 @@ body {
 	background: url("../img/bike-100.png") 0 0 no-repeat;
 	opacity: 1;
 }
-#lift{
-  left: 50%;
-  top: 297px;
-  position: absolute;
-  width: 342px;
-  height: 240px;
-  background: url("../img/lift.png") 0 0 no-repeat;
-  margin-left: -176px;
-}
+
 #contact{
   height: 400px;
 }
