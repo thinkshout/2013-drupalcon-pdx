@@ -29,7 +29,6 @@ body {
   background-image: url('../img/sthelens.png'), url('../img/hood.png');
   background-position: 5% @topsky+30, 110% @topsky+55;
   background-repeat: no-repeat;
-  border-bottom: 2px dotted black;
 }
 #clouds{
   background: url('../img/clouds.png') repeat-x 250% @topsky - 60;
@@ -208,6 +207,7 @@ body {
   }
 }
 #map-stuff{
+  border-top: 1px solid #fff;
   .container{
     margin-top: -74px;
   }
@@ -218,12 +218,19 @@ body {
 }
 
 #contact{
-  padding-top: 75px;
-  height: 500px;
-  //background: url("../img/leather.png");
-  background: #333;
-  //text-shadow: 0px 1px 0px #fff;
+  //height: 500px;
+  border-top: 1px solid #ababab;
+  background-image: url("../img/top-shad.png"), url("../img/gray_sand.png");
+  background-repeat: repeat-x, repeat;
+
+  border-bottom: 2px dotted black;
+  text-shadow: 0px 2px 0px #000;
   color: #e5e0d8;
+  .container{
+    padding-top: 100px;
+    padding-bottom: 75px;
+    background:  left top repeat-x;
+  }
   h1{
     font-size: 200px;
     line-height: 200px;
