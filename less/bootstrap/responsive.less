@@ -37,15 +37,27 @@
 
 @media (max-width: 480px) {
   #announcement {
-    background: red !important;
-  }
-  #announcement {
+    background: red;
     h1 {
       font-size: 74px; //110px
       line-height: 85px;
       span {
-        font-size: 96px;
+        font-size: 105px;
       }
+    }
+    h2{
+      //background: url("../img/logo-chunk-stacked.png") center top no-repeat;
+      img{
+        //display: none;
+      }
+    }
+  } //announcement
+  #contact{
+    img{
+      margin: 0 auto;
+    }
+    h1{
+      text-align: center;
     }
   }
   // Smooth out the collapsing/expanding nav
@@ -125,14 +137,7 @@
   .carousel-caption {
     position: static;
   }
-  #contact{
-    img{
-      margin: 0 auto;
-    }
-    h1{
-      text-align: center;
-    }
-  }
+
 
 }
 
@@ -143,18 +148,16 @@
 
 @media (max-width: 768px) {
   #announcement {
-    background:orange !important;
+    //background:orange !important;
     h1 {
-      font-size: 74px; //110px
+      font-size: 80px; //110px
       line-height: 85px;
       span {
-        font-size: 74px;
+        //font-size: 74px;
       }
     }
   }
   #announcement{
-    font-family:'LeagueGothicRegular', Arial, sans-serif;
-    text-transform: uppercase;
     top: @topsky+600;
     padding-bottom: 12px;
     position: relative;
@@ -162,16 +165,7 @@
       color: @greenblue;
     }
     h2{
-      color: @white;
-      font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
-      font-size: 40px;
-      line-height: 36px;
-      font-weight: normal;
-      //background: url("../../img/logo.png") 55% top no-repeat;
-      //padding-top: 130px;
-      width: 100%;
       margin: 0 auto;
-      .clearfix;
       text-align: center;
       line-height: 55px;
       & span{
@@ -192,6 +186,9 @@
         text-shadow: 0px 0px 5px @greenblue;
         font-size: 80px;
       } //year
+      img{
+        width: 550px;
+      }
     } //h2
   } //announcement
 
@@ -225,8 +222,10 @@
     position: relative;
   }
   #map {
-    margin-left: 50px;
+    width: 90%;
+    margin: 0 10%;
     min-height: 600px;
+    border: 1px solid red;
   }
 }
 
@@ -248,11 +247,6 @@
        font-size: 36px;
        line-height: 36px;
        width: 660px;
-       //padding-left: 115px;
-       //background: url("../../img/logo.png") left bottom no-repeat;
-
-       //text-shadow: 0px 2px 3px #159ee2;
-       padding-top:20px;
        margin: 0 auto;
        text-align: left;
        .clearfix;
