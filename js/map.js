@@ -14,7 +14,7 @@ var features = {
     lat: 45.5163715505381,
     lon: -122.629707282185,
     zoom: 15,
-    popup: '<div class="feature2"><img class="pdx-photo" src="" /><div class="pdx-fact">There\'s no sales tax in Oregon, which is good, because we aren\'t particularly good at math. We are good at riding bikes.</div></div>'
+    popup: '<div class="feature2"> <img class="pdx-photo" src="" /><div class="pdx-fact">Portland was not, in fact, discovered by Lewis and Clarke. It was discovered by a lot of Californians who got tired of Bay Area traffic and high housing costs.</div></div>'
   },
   feature3: {
     lat: 45.52268014994,
@@ -26,19 +26,19 @@ var features = {
     lat: 45.513464910352276,
     lon: -122.67119884490964,
     zoom: 14,
-    popup: '<div class="feature4"><img class="pdx-photo" src="" /><div class="pdx-fact">Portland was not, in fact, discovered by Lewis and Clarke. It was discovered by a lot of Californians who got tired of Bay Area traffic and high housing costs.</div></div>'
+    popup: '<div class="feature4"><div class="pdx-photo"><iframe width="300" height="182" src="http://www.youtube.com/embed/V3nMnr8ZirI" frameborder="0" allowfullscreen></iframe></div><div class="pdx-fact">There\'s no sales tax in Oregon, which is good, because we aren\'t particularly good at math. We are good at riding bikes.</div></div>'
   },
   feature5: {
     lat: 45.51182053454101,
     lon: -122.62604713439943,
     zoom: 14,
-    popup: '<div class="feature5"><img class="pdx-photo" src="" /><div class="pdx-fact">PDX is the 23rd largest city in the U.S, but we drink more locally brewed beer than any city in the world (trust us, we\'re drinking right now).</div></div>'
+    popup: '<div class="feature5"><img class="pdx-photo popup-image" src="img/beer.jpg" /><div class="pdx-fact">PDX is the 23rd largest city in the U.S, but we drink more locally brewed beer than any city in the world (trust us, we\'re drinking right now).</div></div>'
   },
   feature6: {
     lat: 45.563102450326845,
     lon: -122.63527393341064,
     zoom: 13,
-    popup: '<div class="feature6"><img class="pdx-photo" src="" /><div class="pdx-fact">Portland is not the capital of Oregon, but it is the capital of the Hipster phenomenon. (Not Brooklyn or Austin - just count our mustaches and tattoos.) Also, Oregon residents own 1/4th of the U.S.\' llama population.</div></div>'
+    popup: '<div class="feature6"><img class="pdx-photo popup-image" src="img/hipster.jpg" /><div class="pdx-fact">Portland is not the capital of Oregon, but it is the capital of the Hipster phenomenon. (Not Brooklyn or Austin - just count our mustaches and tattoos.) Also, Oregon residents own 1/4th of the U.S.\' llama population.</div></div>'
   }
 };
 
