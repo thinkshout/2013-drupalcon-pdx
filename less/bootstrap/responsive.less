@@ -166,10 +166,12 @@
     }
     h2{
       margin: 0 auto;
-      text-align: center;
       line-height: 55px;
       & span{
         display: block;
+      }
+      .stack{
+        text-align: right;
       }
       .con{
         letter-spacing: 10px;
@@ -181,7 +183,6 @@
       }
       .year{
         color: @white;
-        font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
         font-weight: normal;
         text-shadow: 0px 0px 5px @greenblue;
         font-size: 80px;
@@ -242,37 +243,25 @@
        }
      }
      h2{
-
-
        font-size: 36px;
        line-height: 36px;
-       width: 660px;
-       margin: 0 auto;
-       text-align: left;
-       .clearfix;
+       text-align: right;
        & span{
          display: block;
        }
+       .stack{
+        height: 160px;
+        background: url("../../img/logo-ballpark.png") right top no-repeat;
+       }
        .con{
-         letter-spacing: 10px;
-         float: left;
        }
        .portland{
-         font-size: 70px;
-         line-height: 70px;
-         float: left;
-         clear: left;
        }
        .year{
          font-size: 114px;
-         line-height: 106px;
-         float: left;
-         color: @white;
-         font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
-         font-weight: normal;
+         text-align: left;
          letter-spacing: -5px;
          text-shadow: 0px 0px 5px @greenblue;
-         margin-top: -40px;
        } //year
      } //h2
    } //announcement
@@ -331,12 +320,6 @@
 // ---------------
 
 @media (min-width: 980px) {
-  #announcement {
-    //background: blue !important;
-    h1{
-      font-size: 125px;
-    }
-  }
   .nav-collapse.collapse {
     height: auto !important;
   }
@@ -352,12 +335,9 @@
     line-height: 135px;
     }
     h2 {
-      width: 842px;
-      height: 159px;
-      //background: url("../../img/logo-chunk.png") center top no-repeat;
       .year{
-        //font-size: 126px;
-        //line-height: 106px;
+
+
       } //year
     }
   }
