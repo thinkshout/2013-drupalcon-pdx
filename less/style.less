@@ -49,11 +49,11 @@ body {
   position: relative;
   width: 264px;
   height: 291px;
-  margin: 0 auto;
+  .center-block;
   top: @topsky - 30;
   z-index: 50;
   img {
-    margin: 0 auto;
+    .center-block;
   }
 }
 #bridge {
@@ -70,7 +70,7 @@ body {
   z-index: 75;
 }
 .main{
-	height: 1350px;
+	height: 1195px;
 }
 #announcement{
   font-family:'LeagueGothicRegular', Arial, sans-serif;
@@ -91,13 +91,14 @@ body {
     font-weight: normal;
     text-shadow: 0px 0px 5px @greenblue;
     text-indent: -9999px;
+    width: 100%;
     img{
       max-width: 100%; //just testing
+      .center-block;
     }
   }
 } //announcement
-.test12adf222{}
-
+.test{}
 .scrollblock{
   position: relative;
 }
@@ -163,9 +164,9 @@ body {
     clear: right;
     float: right;
     padding: 0;
-    margin: 0;   
+    margin: 0;
 
-    
+
   }
   li {
     float: left;
@@ -240,10 +241,10 @@ body {
   font-size: 26px;
   line-height: 35px;
   font-family:'LeagueGothicRegular', Arial, sans-serif;
-  color: @greenblue;  
+  color: @greenblue;
 }
 
 .popup-image {
   .border-radius(5px);
-  .box-shadow(0 1px 3px rgba(0,0,0,.5)) 
+  .box-shadow(0 1px 3px rgba(0,0,0,.5))
 }
