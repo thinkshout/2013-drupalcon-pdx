@@ -20,7 +20,7 @@ var features = {
     lat: 45.52268014994,
     lon: -122.673152182496,
     zoom: 13,
-    popup: '<div class="feature3"><img class="pdx-photo popup-image" src="../img/chris_amye.jpg" /><div class="pdx-fact">We eat a lot of Voodoo Donuts and drink a lot of Stumptown Coffee - but it doesn\'t show. Also, we can drink beer at our movie theaters.</div></div>'
+    popup: '<div class="feature3"><img class="pdx-photo popup-image" src="img/chris_amye.jpg" /><div class="pdx-fact">We eat a lot of Voodoo Donuts and drink a lot of Stumptown Coffee - but it doesn\'t show. Also, we can drink beer at our movie theaters.</div></div>'
   },
   feature4: {
     lat: 45.513464910352276,
