@@ -134,14 +134,64 @@
 
 @media (max-width: 768px) {
   #announcement {
+    background:orange !important;
     h1 {
       font-size: 74px; //110px
       line-height: 85px;
       span {
-        font-size: 96px;
+        font-size: 74px;
       }
     }
   }
+  #announcement{
+    font-family:'LeagueGothicRegular', Arial, sans-serif;
+    text-transform: uppercase;
+    top: @topsky+600;
+    padding-bottom: 12px;
+    position: relative;
+    h1{
+      color: @greenblue;
+      text-shadow: 0px 2px 3px #159ee2;
+      text-align: center;
+      letter-spacing: 1px;
+      font-weight: normal;
+    }
+    h2{
+      color: @white;
+      font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
+      font-size: 40px;
+      line-height: 36px;
+      font-weight: normal;
+      background: url("../../img/logo.png") 55% top no-repeat;
+      text-shadow: 0px 0px 5px @greenblue;
+      //text-shadow: 0px 2px 3px #159ee2;
+      padding-top: 130px;
+      width: 100%;
+      margin: 0 auto;
+      .clearfix;
+      text-align: center;
+      line-height: 55px;
+      & span{
+        display: block;
+      }
+      .con{
+        letter-spacing: 10px;
+        font-size: 40px;
+        margin-left:5px;
+      }
+      .portland{
+        font-size: 60px;
+      }
+      .year{
+        color: @white;
+        font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        text-shadow: 0px 0px 5px @greenblue;
+        font-size: 80px;
+      } //year
+    } //h2
+  } //announcement
+  
   // GRID & CONTAINERS
   // -----------------
   // Remove width from containers
@@ -171,9 +221,65 @@
     background-repeat: no-repeat;
     position: relative;
   }
+  #map {
+    width: 90%;
+    min-height: 600px;
+    margin-left: 5%;
+  }
 }
 
-
+@media (min-width: 768px) {
+  #announcement {
+     background:white !important;
+     h1 {
+       font-size: 107px;
+       line-height: 110px;
+       span {
+         font-size: 107px;
+       }
+     }
+     h2{
+       color: @white;
+       font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
+       font-size: 36px;
+       line-height: 36px;
+       font-weight: normal;
+       padding-left: 115px;
+       background: url("../../img/logo.png") left bottom no-repeat !important;
+       text-shadow: 0px 0px 5px @greenblue;
+       //text-shadow: 0px 2px 3px #159ee2;
+       padding-top:20px;
+       width: 660px;
+       margin: 0 auto;
+       text-align: left;
+       .clearfix;
+       & span{
+         display: block;
+       }
+       .con{
+         letter-spacing: 10px;
+         float: left;
+       }
+       .portland{
+         font-size: 70px;
+         line-height: 70px;
+         float: left;
+         clear: left;
+       }
+       .year{
+         font-size: 114px;
+         line-height: 106px;
+         float: left;
+         color: @white;
+         font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
+         font-weight: normal;
+         letter-spacing: -5px;
+         text-shadow: 0px 0px 5px @greenblue;
+         margin-top: -40px;
+       } //year
+     } //h2
+   } //announcement
+}
 
 // PORTRAIT TABLET TO DEFAULT DESKTOP
 // ----------------------------------
@@ -188,13 +294,7 @@
         font-size: 107px;
       }
     }
-    h2 {
-      .year {
-         font-size: 114px;
-         line-height: 106px;
-      }
-    }
-  }
+  } //announcement
   // Fixed grid
   #gridSystem > .generate(12, 42px, 20px);
 
@@ -222,6 +322,11 @@
   body {
     padding-top: 0;
   }
+  #map {
+    width: 100%;
+    min-height: 600px;
+    margin-left: 0;
+  }
 }
 
 
@@ -231,7 +336,10 @@
 
 @media (min-width: 980px) {
   #announcement {
-    //background: blue !important;
+    background: blue !important;
+    h1, h1 span {
+      font-size: 140px !important;
+    }
   }
   .nav-collapse.collapse {
     height: auto !important;
@@ -262,8 +370,12 @@
 // ------------------
 
 @media (min-width: 1200px) {
-  body{
-    background: green;
+  #announcement {
+    background: purple !important;
+    h1, h1 span {
+      font-size: 175px !important;
+      letter-spacing: 1px;
+    }
   }
 
   // Fixed grid
@@ -285,6 +397,7 @@
   #announcement {
     //background: purple !important;
   }
+
 }
 
 
