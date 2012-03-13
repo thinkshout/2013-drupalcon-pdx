@@ -137,48 +137,46 @@ body {
 
 
 #features {
-  //margin-top: -40px;
-  position:relative;
+  position:absolute;
   z-index: 9999;
+  right: 20px;
+  bottom: -70px;
+  h2 {
+    float:right;
+    margin-right:10px;
+    font-size: 30px;
+    line-height: 40px;
+    font-family:'LeagueGothicRegular', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 0px 2px 0px #555;
+    background: rgba(54, 54, 54, .95);
+    padding: 0;
+    .border-radius(20px);
+    text-align: center;
+    position:relative;
+    padding: 1% 4%;
+  }
   ul{
+    clear: right;
     float: right;
     padding: 0;
-    margin: 0;
+    margin: 0;   
+
+    
   }
   li {
     float: left;
     list-style: none;
-    width: 73px;
-    height: 74px;
     display: block;
     a {
-      width: 73px;
-      height: 74px;
       display: block;
-      span {
-        .visuallyhidden;
-      }
     }
   }
-  #feature1 {
-    background: url('../img/f1.png');
-  }
-  #feature2 {
-    background: url('../img/f2.png');
-  }
-  #feature3 {
-    background: url('../img/f3.png');
-  }
-  #feature4 {
-    background: url('../img/f4.png');
-  }
-  #feature5 {
-    background: url('../img/f5.png');
-  }
-  #feature6 {
-    background: url('../img/f6.png');
-  }
 }
+
 #map-stuff{
   border-top: 1px solid #fff;
   width: auto;
@@ -222,4 +220,8 @@ body {
   p{
 
   }
+}
+
+#features li a img {
+  max-width: 100%;
 }
