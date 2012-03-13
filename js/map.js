@@ -8,19 +8,19 @@ var features = {
     lat: 45.5236111,
     lon: -122.675,
     zoom: 8,
-    popup: '<div class="feature1"><img class="pdx-photo" src="img/gaspump.png" /><div class="pdx-fact">It\'s illegal to pump your own gas in Oregon, as well as to used canned corn as fish bate, or box with a kangaroo. Also, it\'s illegal to possess an uncured animal hide in Portland city limits, or to whistle under water. You\'ve been warned.</div></div>'
+    popup: '<div class="feature1"><img class="pdx-photo popup-image" src="img/drewish.jpg" /><div class="pdx-fact">It\'s illegal to pump your own gas in Oregon, as well as to used canned corn as fish bate, or box with a kangaroo. Also, it\'s illegal to possess an uncured animal hide in Portland city limits, or to whistle under water. You\'ve been warned.</div></div>'
   },
   feature2: {
     lat: 45.5163715505381,
     lon: -122.629707282185,
     zoom: 15,
-    popup: '<div class="feature2"> <img class="pdx-photo" src="" /><div class="pdx-fact">Portland was not, in fact, discovered by Lewis and Clarke. It was discovered by a lot of Californians who got tired of Bay Area traffic and high housing costs.</div></div>'
+    popup: '<div class="feature2"> <img class="pdx-photo popup-image" src="img/andrea.jpg" /><div class="pdx-fact">Portland was not, in fact, discovered by Lewis and Clarke. It was discovered by a lot of Californians who got tired of Bay Area traffic and high housing costs.</div></div>'
   },
   feature3: {
     lat: 45.52268014994,
     lon: -122.673152182496,
     zoom: 13,
-    popup: '<div class="feature3"><img class="pdx-photo popup-image" src="../img/grant.jpg" /><div class="pdx-fact">We eat a lot of Voodoo Donuts and drink a lot of Stumptown Coffee - but it doesn\'t show. Also, we can drink beer at our movie theaters.</div></div>'
+    popup: '<div class="feature3"><img class="pdx-photo popup-image" src="../img/chris_amye.jpg" /><div class="pdx-fact">We eat a lot of Voodoo Donuts and drink a lot of Stumptown Coffee - but it doesn\'t show. Also, we can drink beer at our movie theaters.</div></div>'
   },
   feature4: {
     lat: 45.513464910352276,
