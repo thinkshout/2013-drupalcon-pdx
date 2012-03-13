@@ -125,6 +125,15 @@
   .carousel-caption {
     position: static;
   }
+  #contact{
+    img{
+      margin: 0 auto;
+    }
+    h1{
+      text-align: center;
+    }
+  }
+
 }
 
 
@@ -151,10 +160,6 @@
     position: relative;
     h1{
       color: @greenblue;
-      text-shadow: 0px 2px 3px #159ee2;
-      text-align: center;
-      letter-spacing: 1px;
-      font-weight: normal;
     }
     h2{
       color: @white;
@@ -162,10 +167,8 @@
       font-size: 40px;
       line-height: 36px;
       font-weight: normal;
-      background: url("../../img/logo.png") 55% top no-repeat;
-      text-shadow: 0px 0px 5px @greenblue;
-      //text-shadow: 0px 2px 3px #159ee2;
-      padding-top: 130px;
+      //background: url("../../img/logo.png") 55% top no-repeat;
+      //padding-top: 130px;
       width: 100%;
       margin: 0 auto;
       .clearfix;
@@ -191,7 +194,7 @@
       } //year
     } //h2
   } //announcement
-  
+
   // GRID & CONTAINERS
   // -----------------
   // Remove width from containers
@@ -222,34 +225,34 @@
     position: relative;
   }
   #map {
-    width: 90%;
+    margin-left: 50px;
     min-height: 600px;
-    margin-left: 5%;
   }
 }
 
+// Tablet vertical AND UP
+// ----------------------------------
 @media (min-width: 768px) {
   #announcement {
-     background:white !important;
+     //background:white !important;
      h1 {
        font-size: 107px;
        line-height: 110px;
        span {
-         font-size: 107px;
+         //font-size: 107px;
        }
      }
      h2{
-       color: @white;
-       font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
+
+
        font-size: 36px;
        line-height: 36px;
-       font-weight: normal;
-       padding-left: 115px;
-       background: url("../../img/logo.png") left bottom no-repeat !important;
-       text-shadow: 0px 0px 5px @greenblue;
+       width: 660px;
+       //padding-left: 115px;
+       //background: url("../../img/logo.png") left bottom no-repeat;
+
        //text-shadow: 0px 2px 3px #159ee2;
        padding-top:20px;
-       width: 660px;
        margin: 0 auto;
        text-align: left;
        .clearfix;
@@ -295,6 +298,7 @@
       }
     }
   } //announcement
+
   // Fixed grid
   #gridSystem > .generate(12, 42px, 20px);
 
@@ -323,9 +327,7 @@
     padding-top: 0;
   }
   #map {
-    width: 100%;
     min-height: 600px;
-    margin-left: 0;
   }
 }
 
@@ -336,9 +338,9 @@
 
 @media (min-width: 980px) {
   #announcement {
-    background: blue !important;
-    h1, h1 span {
-      font-size: 140px !important;
+    //background: blue !important;
+    h1{
+      font-size: 125px;
     }
   }
   .nav-collapse.collapse {
@@ -352,13 +354,16 @@
   }
   #announcement {
     h1 {
-    font-size: 110px; //110px
-    line-height: 110px;
+    font-size: 125px; //110px
+    line-height: 135px;
     }
     h2 {
+      width: 842px;
+      height: 159px;
+      //background: url("../../img/logo-chunk.png") center top no-repeat;
       .year{
-        font-size: 126px;
-        line-height: 106px;
+        //font-size: 126px;
+        //line-height: 106px;
       } //year
     }
   }
@@ -371,9 +376,9 @@
 
 @media (min-width: 1200px) {
   #announcement {
-    background: purple !important;
+    //background: purple !important;
     h1, h1 span {
-      font-size: 175px !important;
+      //font-size: 175px !important;
       letter-spacing: 1px;
     }
   }
@@ -393,9 +398,6 @@
   }
   .thumbnails > li {
     margin-left: 30px;
-  }
-  #announcement {
-    //background: purple !important;
   }
 
 }
