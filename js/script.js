@@ -44,7 +44,7 @@ $(document).ready(function() {
   );
 
   var liftTop = parseInt($('#lift').css('top').replace("px", ""), 10);
-  console.log(liftTop);
+
   scrollorama.animate('#lift',
     {
       delay:0,
@@ -75,8 +75,6 @@ $(document).ready(function() {
     }
   );
 
-
-  console.log('hello');
 });
 
 

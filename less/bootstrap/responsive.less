@@ -171,8 +171,10 @@
         background: url("../../img/logo-ballpark-480.png") center top no-repeat;
       }
       .con{
-        letter-spacing: 10px;
-        font-size: 40px;
+        text-align: center;
+        padding-left: 15%;
+        font-size: 36px;
+        line-height: 36px;
         margin-left:5px;
       }
       .portland{
@@ -180,10 +182,17 @@
       }
       .year{
         font-size: 170px;
+        line-height: 170px;
         text-align: center;
       } //year
     } //h2
   } //announcement
+  #contact{
+    h1{
+      font-size: 80px;
+      line-height: 100px;
+    }
+  }
 
   // GRID & CONTAINERS
   // -----------------
@@ -226,39 +235,47 @@
 // ----------------------------------
 @media (min-width: 768px) {
   #announcement {
-     //background:white !important;
-     h1 {
-       font-size: 107px;
-       line-height: 110px;
-       span {
-         //font-size: 107px;
-       }
-     }
-     h2{
-       font-size: 36px;
-       line-height: 36px;
-       text-align: right;
-       & span{
-         display: block;
-       }
-       .stack{
+    //background:white !important;
+    h1 {
+      font-size: 107px;
+      line-height: 110px;
+      span {
+        //font-size: 107px;
+      }
+    }
+    h2{
+      font-size: 36px;
+      line-height: 36px;
+      text-align: right;
+      & span{
+       display: block;
+      }
+      .stack{
         height: 160px;
         background: url("../../img/logo-ballpark.png") right top no-repeat;
-       }
-       .con{
-       }
-       .portland{
-       }
-       .year{
-          font-size: 170px;
-          text-align: left;
-          letter-spacing: 5px;
-          text-shadow: 0px 0px 5px @greenblue;
-          line-height: 170px;
-          padding-top: 30px;
-       } //year
-     } //h2
-   } //announcement
+      }
+      .con{
+        font-size: 42px;
+        line-height: 42px;
+      }
+      .portland{
+      }
+      .year{
+        font-size: 170px;
+        text-align: left;
+        letter-spacing: 5px;
+        text-shadow: 0px 0px 5px @greenblue;
+        line-height: 170px;
+        padding-top: 30px;
+      } //year
+    } //h2
+  } //announcement
+  #contact{
+    h1{
+      font-size: 110px;
+      line-height: 130px;
+    }
+  }
 }
 
 // PORTRAIT TABLET TO DEFAULT DESKTOP
@@ -340,9 +357,7 @@
     }
     h2 {
       .year{
-
-
-      } //year
+      }
     }
   }
 }

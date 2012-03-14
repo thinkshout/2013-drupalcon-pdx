@@ -79,16 +79,16 @@ body {
   position: relative;
   h1{
     font-family:'LeagueGothicRegular', Arial, sans-serif;
-    text-shadow: 0px 2px 3px #159ee2;
+    text-shadow: 0px 2px 3px #000;
     font-weight: normal;
     text-align: center;
     letter-spacing: 1px;
-    color: @greenblue;
+    color: @white;
   }
   h2{
     color: @white;
     font-weight: normal;
-    text-shadow: 0px 0px 5px @greenblue;
+    text-shadow: 0px 0px 5px #000;
     //text-indent: -9999px;
     img{
       // max-width: 100%; //just testing
@@ -96,7 +96,7 @@ body {
       display: none;
     }
     .con{
-      font: 42px/42px 'ChunkFiveRegular';
+      font-family: 'ChunkFiveRegular';
       padding-top: 33px;
       padding-right: 20px;
     }
@@ -107,10 +107,21 @@ body {
     .year{
       font-family: 'ChunkFiveRegular';
       height: 127px;
+      color: @greenblue;
+      text-shadow: none;
     }
   }
 } //announcement
-.test{}
+
+#con-date{
+  p{
+    font-family: 'LeagueGothicRegular';
+    text-align: center;
+    font-size: 36px;
+    line-height: 76px;
+    color: @greenblue;
+  }
+}
 .scrollblock{
   position: relative;
 }
@@ -176,8 +187,6 @@ body {
     float: right;
     padding: 0;
     margin: 0;
-
-
   }
   li {
     float: left;
@@ -215,8 +224,6 @@ body {
     padding-top: 100px;
   }
   h1{
-    font-size: 110px;
-    line-height: 130px;
     font-family:'LeagueGothicRegular', Arial, sans-serif;
     text-transform: uppercase;
     color: #e5e0d8;
