@@ -39,6 +39,9 @@
   body {
     background: url('../../img/480-background.jpg') no-repeat scroll top center;
   }
+  .main{
+  	height: 360px;
+  }
   #mountains {
     background-image: none;
   }
@@ -60,26 +63,57 @@
   #bridge {
     background: none;
   }
-  #announcement {
-    background: green;
-    h1 {
-      font-size: 74px; //110px
-      line-height: 85px;
+  #drop {
+    width: 130px;
+    height: auto;
+    margin: 0 auto;
+  }
+  #announcement{
+    top: 100px;
+    h1{
+      font-size: 37px; //110px
+      line-height: 45px;
+      margin-bottom: 5px;
       span {
-        font-size: 105px;
+        font-size: inherit;
       }
     }
     h2{
+      position: relative;
       .stack{
-        height: 147px;
+        height: 80px;
         background: url("../../img/logo-ballpark-480.png") center top no-repeat;
+        span {
+          display: block;
+        }
       }
-     .year{
-      font-size: 170px;
-      text-align: center;
-     }
+      .year{
+       font-size: 30px;
+       text-align: center;
+       margin-top: 0px;
+       display: none;
+      }
+      .con{
+        font-size: 20px;
+        text-align: center;
+        padding-left: 15%;
+      }
+      .mobile-con-date {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 5px;        
+      }
+      .portland {
+        text-indent: .9999em;
+      }
     }
   } //announcement
+  
+  #con-date {
+    display: none;
+  }
+  
+  
   #contact{
     img{
       margin: 0 auto;
@@ -177,42 +211,42 @@
 // --------------------------------------------------
 
 @media (max-width: 768px) {
-  #announcement{
-    top: @topsky+600;
-    padding-bottom: 12px;
-    position: relative;
-    h1{
-      font-size: 80px; //110px
-      line-height: 85px;
-    }
-    h2{
-      margin: 0 auto;
-      line-height: 55px;
-      & span{
-        display: block;
+  /*#announcement{
+      top: @topsky+600;
+      padding-bottom: 12px;
+      position: relative;
+      h1{
+        font-size: 80px; //110px
+        line-height: 85px;
       }
-      .stack{
-        text-align: right;
-        height: 147px;
-        background: url("../../img/logo-ballpark-480.png") center top no-repeat;
-      }
-      .con{
-        text-align: center;
-        padding-left: 15%;
-        font-size: 36px;
-        line-height: 36px;
-        margin-left:5px;
-      }
-      .portland{
-        font-size: 60px;
-      }
-      .year{
-        font-size: 170px;
-        line-height: 170px;
-        text-align: center;
-      } //year
-    } //h2
-  } //announcement
+      h2{
+        margin: 0 auto;
+        line-height: 55px;
+        & span{
+          display: block;
+        }
+        .stack{
+          text-align: right;
+          height: 147px;
+          background: url("../../img/logo-ballpark-480.png") center top no-repeat;
+        }
+        .con{
+          text-align: center;
+          padding-left: 15%;
+          font-size: 36px;
+          line-height: 36px;
+          margin-left:5px;
+        }
+        .portland{
+          font-size: 60px;
+        }
+        .year{
+          font-size: 170px;
+          line-height: 170px;
+          text-align: center;
+        } //year
+      } //h2
+    } //announcement*/
   #contact{
     h1{
       font-size: 80px;
