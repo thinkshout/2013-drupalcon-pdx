@@ -49,7 +49,7 @@
       .stack{
         height: 147px;
         background: url("../../img/logo-ballpark-480.png") center top no-repeat;
-     }
+      }
      .year{
       font-size: 170px;
       text-align: center;
@@ -167,6 +167,8 @@
       }
       .stack{
         text-align: right;
+        height: 147px;
+        background: url("../../img/logo-ballpark-480.png") center top no-repeat;
       }
       .con{
         letter-spacing: 10px;
@@ -178,6 +180,7 @@
       }
       .year{
         font-size: 170px;
+        text-align: center;
       } //year
     } //h2
   } //announcement
@@ -247,10 +250,12 @@
        .portland{
        }
        .year{
-         font-size: 170px;
-         text-align: left;
-         letter-spacing: 5px;
-         text-shadow: 0px 0px 5px @greenblue;
+          font-size: 170px;
+          text-align: left;
+          letter-spacing: 5px;
+          text-shadow: 0px 0px 5px @greenblue;
+          line-height: 170px;
+          padding-top: 30px;
        } //year
      } //h2
    } //announcement
@@ -267,6 +272,16 @@
       line-height: 110px;
       span {
         font-size: 107px;
+      }
+    }
+    h2{
+      .stack{
+        background: url("../../img/logo-ballpark-480.png") right top no-repeat;
+      }
+      .year{
+        font-size: 148px;
+        line-height: 148px;
+        padding-top: 6px;
       }
     }
   } //announcement
@@ -339,6 +354,7 @@
 
 @media (min-width: 1200px) {
   #announcement {
+    content: "min-width:1200px";
     //background: purple !important;
     h1, h1 span {
       //font-size: 175px !important;
