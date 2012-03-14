@@ -3,15 +3,16 @@
 */
 var firedScroll = false;
 var scrollorama = null;
+var test;
 
 function scrollUpInDis(selector){
-  console.log(selector);
-  scrollorama = $.scrollorama({
-    blocks: selector,
-    enablePin:false
-  });
-  if(scrollorama.length()){
-  console.log(scrollorama);
+    console.log(selector);
+      scrollorama = $.scrollorama({
+        blocks: selector,
+        enablePin:false
+      });
+  if(selector !== 'goaway' && firedScroll === false){
+    console.log('running it all again');
     scrollorama.onBlockChange(function() {
       var i = scrollorama.blockIndex;
       $('#console')
@@ -86,8 +87,6 @@ $(window).resize(function(){
   if (res >= 768 && firedScroll === false){
     scrollUpInDis('.scrollblock');
     firedScroll = true;
-  }else{
-    scrollUpInDis('goaway');
   }
 });
 
