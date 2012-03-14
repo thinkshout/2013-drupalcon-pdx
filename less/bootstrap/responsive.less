@@ -101,19 +101,19 @@
       .mobile-con-date {
         font-size: 25px;
         text-align: center;
-        margin-top: 5px;        
+        margin-top: 5px;
       }
       .portland {
         text-indent: .9999em;
       }
     }
   } //announcement
-  
+
   #con-date {
     display: none;
   }
-  
-  
+
+
   #contact{
     img{
       margin: 0 auto;
@@ -122,7 +122,7 @@
       text-align: center;
     }
   }
-  
+
   #features {
     h2 {
       margin-right:22px;
@@ -301,7 +301,8 @@
 // --------------------------------------------------
 
 @media (max-width: 768px) {
-  /*#announcement{
+  /*
+  #announcement{
       top: @topsky+600;
       padding-bottom: 12px;
       position: relative;
@@ -336,14 +337,29 @@
           text-align: center;
         } //year
       } //h2
-    } //announcement*/
+    } //announcement
+    */
   #contact{
+
     h1{
       font-size: 80px;
       line-height: 100px;
+      text-align: center;
     }
     .sign{
-      //display: none;
+      display: none;
+      img{
+        margin: 0 auto;
+      }
+    }
+    .blurb{
+      background: url("../../img/made-in-or.png") center top no-repeat;
+      padding-top: 335px;
+      p{
+        position: static;
+        padding: 40px;
+        background: url("../../img/blurb-bg.png") left top;
+      }
     }
   }
 
@@ -379,8 +395,8 @@
     min-height: 600px;
   }
   #contact h1 {
-  font-size: 70px;
-  line-height: 100px;
+    font-size: 70px;
+    line-height: 100px;
   }
 }
 
@@ -474,9 +490,18 @@
     } //h2
   } //announcement
   #contact{
+    //background-position: left bottom, left top, left top;
     h1{
-      font-size: 110px;
+      font-size: 85px;
       line-height: 130px;
+    }
+    .row{
+    }
+    .blurb{
+      p{
+        // position: absolute;
+        // bottom: 40px;
+      }
     }
   }
   .leaflet-popup-content-wrapper {
@@ -529,6 +554,14 @@
       }
     }
   } //announcement
+  #contact{
+    .blurb{
+      p{
+        position: absolute;
+        bottom: 40px;
+      }
+    }
+  }
 
   // Fixed grid
   #gridSystem > .generate(12, 42px, 20px);
@@ -585,6 +618,11 @@
     h2 {
       .year{
       }
+    }
+  }
+  #contact{
+    h1{
+      font-size: 110px;
     }
   }
 }
