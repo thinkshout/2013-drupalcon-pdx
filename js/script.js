@@ -1,15 +1,17 @@
 /* Author:
 
 */
+var firedScroll = false;
+var scrollorama = null;
 
-function scrollUpInDis(kill){
-  var scrollorama;
-  console.log(kill);
-  if(kill === false){
-   scrollorama = $.scrollorama({
-      blocks:'.scrollblock',
-      enablePin:false
-    });
+function scrollUpInDis(selector){
+  console.log(selector);
+  scrollorama = $.scrollorama({
+    blocks: selector,
+    enablePin:false
+  });
+  if(scrollorama.length()){
+  console.log(scrollorama);
     scrollorama.onBlockChange(function() {
       var i = scrollorama.blockIndex;
       $('#console')
@@ -75,21 +77,17 @@ function scrollUpInDis(kill){
         end:600
       }
     );
-  }else{
-    console.log(scrollorama);
-    scrollorama = null;
-    console.log('we should be killing this');
   }
 }
 
 $(window).resize(function(){
   console.log('resized');
   var res = $(window).width();
-  if (res >= 768){
-    scrollUpInDis(false);
+  if (res >= 768 && firedScroll === false){
+    scrollUpInDis('.scrollblock');
+    firedScroll = true;
   }else{
-    console.log('kill it!');
-    scrollUpInDis(true);
+    scrollUpInDis('goaway');
   }
 });
 
