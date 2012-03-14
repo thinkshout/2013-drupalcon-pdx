@@ -23,12 +23,9 @@ img{
 	display: block;
 }
 
-.main{
-	height: 1195px;
-}
+
 #announcement{
   text-transform: uppercase;
-  top: @topsky+600;
   padding-bottom: 12px;
   position: relative;
   h1{
@@ -51,16 +48,15 @@ img{
     }
     .con{
       font-family: 'ChunkFiveRegular';
-      padding-top: 33px;
-      padding-right: 20px;
+/*      padding-top: 33px;
+      padding-right: 20px;*/
     }
     .portland{
-      text-align: left;
-      text-indent: -9999px;
+      .visuallyhidden;
     }
-    .year{
+    .year, .mobile-con-date{
       font-family: 'ChunkFiveRegular';
-      height: 127px;
+/*      height: 127px;*/
       color: @greenblue;
       text-shadow: none;
     }
@@ -119,10 +115,6 @@ img{
   //right: 20px;
   //bottom: -70px;
   h2 {
-    float:right;
-    margin-right:10px;
-    font-size: 30px;
-    line-height: 40px;
     font-family:'LeagueGothicRegular', Arial, sans-serif;
     text-transform: uppercase;
     font-weight: normal;
@@ -134,7 +126,6 @@ img{
     .border-radius(20px);
     text-align: center;
     position:relative;
-    padding: 1% 4%;
   }
   ul{
     clear: right;
@@ -215,7 +206,7 @@ img{
   }
 }
 
-.leaflet-popup-content-wrapper {
+/*.leaflet-popup-content-wrapper {
   width: 200%;
   height: 220px;
 }
@@ -231,7 +222,12 @@ img{
   font-family:'LeagueGothicRegular', Arial, sans-serif;
   color: @greenblue;
 }
+*/
 
+.pdx-fact {
+  font-family:'LeagueGothicRegular', Arial, sans-serif;
+  color: @greenblue;
+}
 .popup-image {
   .border-radius(5px);
   .box-shadow(0 1px 3px rgba(0,0,0,.5))
