@@ -122,6 +122,41 @@
       text-align: center;
     }
   }
+  
+  #features {
+    h2 {
+      float:right;
+      margin-right:22px;
+      font-size: 25px;
+      line-height: 28px;
+      .border-radius(20px);
+      text-align: center;
+      padding: 5px 2% !important;
+      width: 85%;
+    }
+  }
+  .leaflet-popup-content-wrapper {
+    width: 100%;
+    height: 220px;
+    iframe {
+      width: 320px;
+      height: 247px;
+    }
+  }
+
+  .pdx-photo {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 118px;
+    height: auto;
+  }
+
+  .pdx-fact {
+    font-size: 19px;
+    line-height: 21px;
+  }
+
+
   // Smooth out the collapsing/expanding nav
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0); // activate the GPU
@@ -280,10 +315,17 @@
     width: auto;
     margin: 0;
   }
+  #map-stuff {
+    background: #010101;
+  }
   #map {
-    width: 90%;
-    margin: 0 10%;
+    width: 84%;
+    margin: 0 8%;
     min-height: 600px;
+  }
+  #contact h1 {
+  font-size: 70px;
+  line-height: 100px;
   }
 }
 
@@ -292,6 +334,9 @@
 @media (min-width: 768px) {
   body {
     background: #d9f2f2 url('../../img/sky.png') left -50px repeat-x;
+  }
+  .main{
+  	height: 1195px;
   }
   #mountains {
     background-image: url('../../img/sthelens.png'), url('../img/hood.png');
@@ -379,12 +424,36 @@
       line-height: 130px;
     }
   }
+  .leaflet-popup-content-wrapper {
+    width: 200%;
+    height: 220px;
+  }
+
+  .pdx-photo {
+    float: left;
+    margin: 0 20px 10px 0;
+  }
+
+  .pdx-fact {
+    font-size: 26px;
+    line-height: 35px;
+    font-family:'LeagueGothicRegular', Arial, sans-serif;
+    color: @greenblue;
+  }
+
+  .popup-image {
+    .border-radius(5px);
+    .box-shadow(0 1px 3px rgba(0,0,0,.5))
+  }
 }
 
 // PORTRAIT TABLET TO DEFAULT DESKTOP
 // ----------------------------------
 
 @media (min-width: 768px) and (max-width: 980px) {
+  .main{
+  	height: 1195px;
+  }
   #announcement {
     background: yellow !important;
     h1 {
