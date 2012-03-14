@@ -3,6 +3,7 @@
 */
 var firedScroll = false;
 var scrollorama = null;
+var test;
 
 function scrollUpInDis(selector){
     console.log(selector);
