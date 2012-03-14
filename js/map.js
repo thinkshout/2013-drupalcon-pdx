@@ -86,16 +86,4 @@ jQuery(document).ready(function() {
     return false;
   });
 
-  jQuery(window).resize(function() {
-    setMapHeight();
-  });
-  setMapHeight();
 });
-
-function setMapHeight() {
-  var winHeight = jQuery(window).height();
-  var mainHeight = jQuery('.main').height();
-  if (winHeight > mainHeight) {
-    jQuery('#map').height(winHeight - mainHeight);
-  }
-}
