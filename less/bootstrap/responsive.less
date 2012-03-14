@@ -36,6 +36,30 @@
 // ---------------------
 
 @media (max-width: 480px) {
+  body {
+    background: url('../../img/480-background.jpg') no-repeat scroll top center;
+  }
+  #mountains {
+    background-image: none;
+  }
+  #clouds{
+    background: none;
+  }
+  #farHills {
+    background: none;
+  }
+  #forest {
+    background: none;
+  }
+  #water {
+    background: none;
+  }
+  #city {
+    background: none;
+  }
+  #bridge {
+    background: none;
+  }
   #announcement {
     background: green;
     h1 {
@@ -141,11 +165,13 @@
   .carousel-caption {
     position: static;
   }
-
-
 }
 
-
+@media (min-width: 480px) and (max-width: 768px) {
+  body {
+    background: url('../../img/768-background.jpg') no-repeat scroll top center;
+  }
+}
 
 // LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
 // --------------------------------------------------
@@ -217,23 +243,63 @@
     width: auto;
     margin: 0;
   }
-  #mountains {
-    background-image: url('../../img/hood.png');
-    background-position: 110% 155px;
-    background-repeat: no-repeat;
-    position: relative;
-  }
   #map {
     width: 90%;
     margin: 0 10%;
     min-height: 600px;
-    border: 1px solid red;
   }
 }
 
 // Tablet vertical AND UP
 // ----------------------------------
 @media (min-width: 768px) {
+  body {
+    background: #d9f2f2 url('../../img/sky.png') left -50px repeat-x;
+  }
+  #mountains {
+    background-image: url('../../img/sthelens.png'), url('../img/hood.png');
+    background-position: 5% @topsky+30, 110% @topsky+55;
+    background-repeat: no-repeat;
+  }
+  #clouds{
+    background: url('../../img/clouds.png') repeat-x 250% @topsky - 60;
+  }
+  #farHills {
+    background: url('../../img/far-hills.png') center @topsky+125 repeat-x;
+  }
+  #forest {
+    background: url('../../img/forest.png') center @topsky+145 repeat-x;
+  }
+  #water {
+    background: url('../../img/water.png') center @topsky+291 repeat-x;
+  }
+  #city {
+    background: url('../../img/total-ground.png') center @topsky+179 repeat-x;
+  }
+  #drop {
+    position: relative;
+    width: 264px;
+    height: 291px;
+    .center-block;
+    top: @topsky - 30;
+    z-index: 50;
+    img {
+      .center-block;
+    }
+  }
+  #bridge {
+    background: url('../../img/steel-bridge.png') no-repeat center @topsky+75;
+  }
+  #lift{
+    left: 50%;
+    top: @topsky+237;
+    position: absolute;
+    width: 342px;
+    height: 240px;
+    background: url("../../img/lift.png") 0 0 no-repeat;
+    margin-left: -176px;
+    z-index: 75;
+  }
   #announcement {
     //background:white !important;
     h1 {
