@@ -48,15 +48,15 @@ function scrollUpInDis(selector){
 
     var liftTop = parseInt($('#lift').css('top').replace("px", ""), 10);
 
-    scrollorama.animate('#lift',
-      {
-        delay:0,
-        duration:300,
-        property:'top',
-        start:liftTop,
-        end:250
-      }
-    );
+    // scrollorama.animate('#lift',
+    //   {
+    //     delay:0,
+    //     duration:300,
+    //     property:'top',
+    //     start:liftTop,
+    //     end:250
+    //   }
+    // );
 
     scrollorama.animate('#drop',
       {
