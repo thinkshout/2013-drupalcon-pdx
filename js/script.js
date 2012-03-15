@@ -67,25 +67,28 @@ function scrollUpInDis(selector){
         end:600
       }
     );
-
+    /*
     scrollorama.animate('#announcement',
       {
         delay:0,
         duration:300,
         property:'top',
-        start:375,
+        //start:375,
+        start: $('#announcement').css('top'),
         end:600
       }
     );
+    */
   }
 }
 
 $(window).resize(function(){
   console.log('resized');
-  var res = $(window).width();
-  if (res >= 768 && firedScroll === false){
+  if ($(this).width() >= 768 /*&& firedScroll === false*/){
     scrollUpInDis('.scrollblock');
     firedScroll = true;
+  }else{
+    //scrollUpInDis('.nothing');
   }
 });
 
