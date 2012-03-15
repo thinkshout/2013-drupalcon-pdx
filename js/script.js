@@ -73,7 +73,7 @@ function scrollUpInDis(selector){
         delay:0,
         duration:300,
         property:'top',
-        start:450,
+        start:375,
         end:600
       }
     );
