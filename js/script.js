@@ -102,6 +102,9 @@ $(window).resize(function(){
 
 $(document).ready(function() {
   $(window).resize();
+  $(window).scroll(function(){
+
+  });
   var winWidth = $(this).width();
 
 });
