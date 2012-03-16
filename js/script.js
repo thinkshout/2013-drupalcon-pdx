@@ -17,6 +17,7 @@ function scrollUpInDis(selector){
     scrollorama.onBlockChange(function() {
 
     });
+
     scrollorama.animate('#biker-1',
       {
         delay:300,
@@ -89,14 +90,13 @@ $(window).resize(function(){
   console.log(winWidth);
   if (winWidth <= 768){
     //$('.scrollblock').removeClass('scrollblock').addClass('resetScroll');
+    //console.log(scrollorama);
     scrollorama = null;
+  }else if(!firedScroll){
+    //scrollUpInDis('.scrollblock');
+    firedScroll = true;
+    console.log('fired scrollorama');
   }
-  // if ($(this).width() >= 768 /*&& firedScroll === false*/){
-  //   scrollUpInDis('.scrollblock');
-  //   firedScroll = true;
-  // }else{
-  //   //scrollUpInDis('.nothing');
-  // }
 
 });
 
