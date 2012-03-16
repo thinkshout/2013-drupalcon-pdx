@@ -60,33 +60,35 @@ function scrollUpInDis(selector){
       }
     );
     var announceTop = $('#announcement').position();
+    console.log(announceTop);
     scrollorama.animate('#drop',
       {
         delay:0,
         duration:400,
         property:'top',
         start:0,
-        end: announceTop.top
+        end: announceTop.top - 100
       }
     );
     console.log(announceTop);
-    // scrollorama.animate('#announcement',
-    //   {
-    //     delay:0,
-    //     duration:300,
-    //     property:'top',
-    //     //start:375,
-    //     start: 0,
-    //     end:600
-    //   }
-    // );
+    scrollorama.animate('#announcement',
+      {
+        delay:0,
+        duration:300,
+        property:'top',
+        start: announceTop.top,
+        end:725
+      }
+    );
 
   }
 }
 
 $(window).resize(function(){
   console.log('resized');
-
+  if ($(this).width() <= 768){
+    $('.scrollblock').removeClass('scrollblock');
+  }
   // if ($(this).width() >= 768 /*&& firedScroll === false*/){
   //   scrollUpInDis('.scrollblock');
   //   firedScroll = true;

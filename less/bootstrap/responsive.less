@@ -442,15 +442,14 @@
     background: url('../../img/total-ground.png') center @topsky+121 repeat-x;
   }
   #drop {
-    position: relative;
+    position: absolute;
     width: 264px;
     height: 291px;
-    .center-block;
+    left:50%;
+    margin-left: -132px;
+    //.center-block;
     top: @topsky - 60;
     z-index: 50;
-    img {
-      .center-block;
-    }
   }
   #bridge {
     width: 100%;
@@ -471,7 +470,7 @@
     z-index: 75;
   }
   #announcement {
-    top: 256px;
+    top: 550px;
     h1 {
       font-size: 107px;
       line-height: 110px;
@@ -508,6 +507,9 @@
     } //h2
     .mobile-con-date{
       display: none;
+    }
+    .full-con-date{
+      font-size: 45px;
     }
   } //announcement
   #contact{
