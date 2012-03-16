@@ -5,11 +5,13 @@ var firedScroll = false;
 var scrollorama = null;
 
 function scrollUpInDis(selector){
-    console.log(selector);
-      scrollorama = $.scrollorama({
-        blocks: selector,
-        enablePin:false
-      });
+  console.log(selector);
+
+  scrollorama = $.scrollorama({
+    blocks: selector,
+    enablePin:false
+  });
+
   if(selector !== 'goaway' && firedScroll === false){
     console.log('running it all again');
     scrollorama.onBlockChange(function() {
@@ -66,7 +68,7 @@ function scrollUpInDis(selector){
         delay:0,
         duration:400,
         property:'top',
-        start:0,
+        start:$('#drop').position().top,
         end: announceTop.top - 100
       }
     );
@@ -82,12 +84,15 @@ function scrollUpInDis(selector){
     );
 
   }
+  scrollorama = null;
 }
 
 $(window).resize(function(){
-  console.log('resized');
-  if ($(this).width() <= 768){
-    $('.scrollblock').removeClass('scrollblock');
+  var winWidth = $(this).width();
+  console.log(winWidth);
+  if (winWidth <= 768){
+    //$('.scrollblock').removeClass('scrollblock').addClass('resetScroll');
+    scrollorama = null;
   }
   // if ($(this).width() >= 768 /*&& firedScroll === false*/){
   //   scrollUpInDis('.scrollblock');
@@ -99,8 +104,9 @@ $(window).resize(function(){
 });
 
 $(document).ready(function() {
-  //$(window).resize();
-  scrollUpInDis('.scrollblock');
+  $(window).resize();
+  var winWidth = $(this).width();
+
 });
 
 

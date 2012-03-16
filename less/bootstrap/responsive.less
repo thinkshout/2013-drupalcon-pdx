@@ -106,6 +106,7 @@
     }
     .mobile-con-date {
         font-size: 25px;
+        line-height: 30px;
         text-align: center;
         margin-top: 5px;
       }
@@ -448,7 +449,8 @@
     left:50%;
     margin-left: -132px;
     //.center-block;
-    top: @topsky - 60;
+    //top: @topsky - 60;
+    top: 0;
     z-index: 50;
   }
   #bridge {
@@ -487,7 +489,7 @@
       }
       .stack{
         height: 160px;
-        background: url("../../img/logo-ballpark.png") right top no-repeat;
+        background: url("../../img/logo-ballpark.png") right bottom no-repeat;
       }
       .con{
         padding-top: 40px;
@@ -556,6 +558,25 @@
 @media (min-width: 768px) and (max-width: 980px) {
   .main{
   	height: 1195px;
+  }
+  #announcement{
+    h1{
+
+    }
+    h2{
+      .stack{
+        background-size: 90%;
+      }
+      .con{
+        padding-top: 60px;
+        font-size: 34px;
+      }
+      .portland{
+      }
+      .year{
+        font-size: 148px;
+      }
+    }
   }
   /*
   #announcement {
