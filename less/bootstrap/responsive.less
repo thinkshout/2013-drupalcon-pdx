@@ -143,7 +143,7 @@
       //width: 85%;
     }
     li{
-      width: 64px;
+      width: 53px;
     }
     li:nth-child(4) {
       //clear:left;
@@ -329,6 +329,11 @@
 // Between iPhone vert (640w) and iPad vert (768w) (a wasteland)
 // --------------------------------------------------
 @media (min-width: 640px) and (max-width: 768px) {
+  .pdx-fact {
+    display: block;
+    font-size: 19px;
+    line-height: 21px;
+  }
   #announcement{
     // h1{
     //   font-size: 86px;
@@ -616,8 +621,6 @@
   .pdx-fact {
     font-size: 26px;
     line-height: 35px;
-    font-family:'LeagueGothicRegular', Arial, sans-serif;
-    color: @greenblue;
   }
 
   .popup-image {
@@ -629,6 +632,9 @@
   }
   .portlandia{
     display: block;
+    .pdx-photo {
+      width: 300px;
+    }
   }
 }
 
@@ -675,6 +681,10 @@
   // Input grid
   #inputGridSystem > .generate(12, 42px, 20px);
 
+  .pdx-fact {
+    font-size: 26px;
+    line-height: 35px;
+  }
 }
 
 
