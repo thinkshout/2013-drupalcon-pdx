@@ -99,19 +99,20 @@
         padding-left: 15%;
         padding-top: 5px;
       }
-      .mobile-con-date {
-        font-size: 25px;
-        text-align: center;
-        margin-top: 5px;
-      }
+
       .portland {
         text-indent: .9999em;
       }
     }
+    .mobile-con-date {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 5px;
+      }
   } //announcement
 
   #con-date {
-    display: none;
+    //display: none;
   }
 
 
@@ -253,7 +254,7 @@
     margin: 0 auto;
   }
   #announcement{
-    top: 180px;
+    top: 200px;
     h1{
       font-size: 37px; //110px
       line-height: 45px;
@@ -282,19 +283,19 @@
         text-align: center;
         padding-left: 15%;
       }
-      .mobile-con-date {
-        font-size: 25px;
-        text-align: center;
-        margin-top: 5px;
-      }
       .portland {
         text-indent: .9999em;
       }
     }
+    .mobile-con-date {
+      font-size: 25px;
+      text-align: center;
+      margin-top: 5px;
+    }
   } //announcement
 
   #con-date {
-    display: none;
+    //display: none;
   }
 }
 
@@ -302,6 +303,14 @@
 // --------------------------------------------------
 
 @media (max-width: 768px) {
+  #announcement{
+    .mobile-con-date{
+      display: block;
+    }
+    .full-con-date{
+      display: none;
+    }
+  }
   /*
   #announcement{
       top: @topsky+600;
@@ -414,7 +423,7 @@
   }
   #mountains {
     background-image: url('../../img/sthelens.png'), url('../../img/hood.png');
-    background-position: 5% @topsky+30, 105% @topsky+35;
+    background-position: 5% @topsky+30, 105% @topsky+45;
     background-repeat: no-repeat;
   }
   #clouds{
@@ -437,7 +446,7 @@
     width: 264px;
     height: 291px;
     .center-block;
-    top: @topsky - 30;
+    top: @topsky - 60;
     z-index: 50;
     img {
       .center-block;
@@ -497,6 +506,9 @@
         padding-top: 30px;
       } //year
     } //h2
+    .mobile-con-date{
+      display: none;
+    }
   } //announcement
   #contact{
     //background-position: left bottom, left top, left top;
