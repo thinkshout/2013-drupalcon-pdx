@@ -106,7 +106,7 @@ $(document).ready(function() {
 
   });
   var winWidth = $(this).width();
-  $('#draggy').height($('#map-stuff').height() - 75 - 10);
+  $('#draggy').height($('#map-stuff').height() - 150 - 10);
 
 });
 

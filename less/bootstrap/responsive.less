@@ -135,7 +135,7 @@
     right: 0 !important;
     h2 {
       //margin-right:22px;
-      font-size: 25px;
+      font-size: 22px;
       line-height: 28px;
       .border-radius(10px);
       text-align: center;
@@ -263,8 +263,8 @@
   #announcement{
     top: 200px;
     h1{
-      font-size: 37px;
-      line-height: 45px;
+      // font-size: 37px;
+      // line-height: 45px;
       margin-bottom: 5px;
       span {
         font-size: inherit;
@@ -273,7 +273,7 @@
     h2{
       position: relative;
       .stack{
-        height: 80px;
+        //height: 80px;
         background: url("../../img/logo-ballpark-480.png") center top no-repeat;
         span {
           display: block;
@@ -298,6 +298,20 @@
       font-size: 25px;
       text-align: center;
       margin-top: 5px;
+    }
+    h1{
+      font-size: 86px;
+      line-height: 110px;
+    }
+    h2{
+      .stack{
+        height: 160px;
+        background-image: url("../../img/logo-ballpark.png");
+      }
+      .con{
+        padding-top: 44px;
+        font-size: 34px;
+      }
     }
   } //announcement
 
@@ -327,23 +341,22 @@
 // Between iPhone vert (640w) and iPad vert (768w) (a wasteland)
 // --------------------------------------------------
 @media (min-width: 640px) and (max-width: 768px) {
-#announcement{
-  h1{
-    font-size: 86px;
-    line-height: 110px;
+  #announcement{
+    // h1{
+    //   font-size: 86px;
+    //   line-height: 110px;
+    // }
+    // h2{
+    //   .stack{
+    //     height: 160px;
+    //     background-image: url("../../img/logo-ballpark.png");
+    //   }
+    //   .con{
+    //     padding-top: 44px;
+    //     font-size: 34px;
+    //   }
+    // }
   }
-  h2{
-    .stack{
-      height: 160px;
-      background-image: url("../../img/logo-ballpark.png");
-    }
-    .con{
-      padding-top: 44px;
-      font-size: 34px;
-    }
-  }
-}
-
 }
 
 // LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
@@ -654,36 +667,7 @@
       }
     }
   }
-  /*
-  #announcement {
-    background: yellow !important;
-    h1 {
-      font-size: 107px;
-      line-height: 110px;
-      span {
-        font-size: 107px;
-      }
-    }
-    h2{
-      .stack{
-        background: url("../../img/logo-ballpark-480.png") right top no-repeat;
-      }
-      .year{
-        font-size: 148px;
-        line-height: 148px;
-        padding-top: 6px;
-      }
-    }
-  } //announcement
-  #contact{
-    .blurb{
-      p{
-        //position: absolute;
-        //bottom: 40px;
-      }
-    }
-  }
-  */
+
 
   // Fixed grid
   #gridSystem > .generate(12, 42px, 20px);
@@ -779,5 +763,4 @@
   }
 
 }
-
 
