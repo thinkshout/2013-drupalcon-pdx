@@ -119,6 +119,9 @@
   .bike{
     background-size: 60px;
   }
+  #map {
+    min-height: 450px;
+  }
   #contact{
     img{
       margin: 0 auto;
@@ -151,9 +154,6 @@
       //padding: 0 5%;
     }
   }
-  #map{
-    height: 200px;
-  }
   .leaflet-popup-content-wrapper {
     width: 100%;
     height: 220px;
@@ -168,8 +168,7 @@
     font-size: 19px;
     line-height: 21px;
   }
-
-
+  
   // Smooth out the collapsing/expanding nav
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0); // activate the GPU
@@ -305,6 +304,24 @@
   #con-date {
     //display: none;
   }
+  #map {
+    min-height: 500px;
+  }
+  .pdx-fact {
+    display: block;
+    font-size: 19px;
+    line-height: 21px;
+  }
+  .pdx-photo {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 118px;
+    height: auto;
+  }
+  .leaflet-popup-content-wrapper {
+    width: 100%;
+    height: 220px;
+  }
 }
 
 // Between iPhone vert (640w) and iPad vert (768w) (a wasteland)
@@ -326,6 +343,7 @@
     }
   }
 }
+
 }
 
 // LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
@@ -433,11 +451,6 @@
   #map-stuff {
     background: #010101;
   }
-  #map {
-    //width: 84%;
-    //margin: 0 8%;
-    min-height: 600px;
-  }
   #draggy{
     display: block;
   }
@@ -445,11 +458,30 @@
     font-size: 70px;
     line-height: 100px;
   }
+  .portlandia {
+    display: none;
+  }
+  .mobile-portlandia {
+    .pdx-photo {
+      float: none;
+      margin: 0 0 5px 0;
+      width: auto;
+      img {
+        margin:0 auto;
+      }
+    }
+    .pdx-fact {
+      display: block !important;
+    }
+  }
 }
 
 // Tablet vertical AND UP
 // ----------------------------------
 @media (min-width: 768px) {
+  #map {
+    min-height: 600px;
+  }
   body {
     background: #d9f2f2 url('../../img/sky.png') left -50px repeat-x;
   }
@@ -588,6 +620,12 @@
     .border-radius(5px);
     .box-shadow(0 1px 3px rgba(0,0,0,.5))
   }
+  .mobile-portlandia {
+    display: none;
+  }
+  .portlandia{
+    display: block;
+  }
 }
 
 // PORTRAIT TABLET TO DEFAULT DESKTOP
@@ -673,9 +711,6 @@
   // Remove any padding from the body
   body {
     padding-top: 0;
-  }
-  #map {
-    min-height: 600px;
   }
 }
 
