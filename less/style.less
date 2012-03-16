@@ -2,7 +2,6 @@
 @import "../fonts/stylesheet.less";
 @import "bootstrap/responsive.less";
 
-
 /* ===== Primary Styles ========================================================
    Author: Thinkshout/SuperstarMedia, 2012
    ========================================================================== */
@@ -75,22 +74,6 @@ img{
 .scrollblock{
   position: relative;
 }
-#console{
-  position: fixed;
-  top: 0;
-  left: 15px;
-  width: 500px;
-  margin: 0;
-  font-size: 14px;
-  font-style: italic;
-  background-color: #69697A;
-  text-shadow: none;
-  text-align: left;
-  padding: 3px 10px;
-  border-radius: 0 0 10px 10px;
-  z-index: 99;
-  opacity: .8;
-}
 .bikes{
   position: absolute;
   bottom: 0;
@@ -110,10 +93,10 @@ img{
 }
 
 #features {
-  //position:absolute;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
   z-index: 10;
-  //right: 20px;
-  //bottom: -70px;
   h2 {
     font-family:'LeagueGothicRegular', Arial, sans-serif;
     text-transform: uppercase;
@@ -126,21 +109,28 @@ img{
     .border-radius(15px);
     text-align: center;
     position:relative;
-    //margin: 0 auto;
   }
-/*  ul{
-    clear: right;
-    float: right;
-    padding: 0;
+  ul{
+    .clearfix;
     margin: 0;
-  }*/
+    li:first-child{
+      margin-left: 0;
+    }
+  }
+
   li {
     float: left;
     list-style: none;
     display: block;
     a {
       display: block;
+      img{
+        max-width: 100%;
+      }
     }
+  }
+  .popup {
+    display: none;
   }
 }
 
@@ -194,26 +184,6 @@ img{
   }
   .row{
     position: relative;
-  }
-}
-
-#features {
-  position: absolute;
-  //width: 80%;
-  bottom: 0;
-  right: 10%;
-  li a img {
-    max-width: 100%;
-  }
-  ul{
-    .clearfix;
-    margin: 0;
-  }
-  ul li:first-child{
-    margin-left: 0;
-  }
-  .popup {
-    display: none;
   }
 }
 
