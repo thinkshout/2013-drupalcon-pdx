@@ -257,7 +257,7 @@
   #announcement{
     top: 200px;
     h1{
-      font-size: 37px; //110px
+      font-size: 37px;
       line-height: 45px;
       margin-bottom: 5px;
       span {
@@ -300,11 +300,25 @@
   }
 }
 
+// Between iPhone vert (640w) and iPad vert (768w) (a wasteland)
+// --------------------------------------------------
+@media (min-width: 640px) and (max-width: 768px) {
+#announcement{
+  h1{
+    font-size: 86px;
+    line-height: 110px;
+  }
+}
+}
+
 // LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
 // --------------------------------------------------
 
 @media (max-width: 768px) {
   #announcement{
+    h2{
+
+    }
     .mobile-con-date{
       display: block;
     }
@@ -489,7 +503,7 @@
       }
       .stack{
         height: 160px;
-        background: url("../../img/logo-ballpark.png") right bottom no-repeat;
+        background: url("../../img/logo-ballpark.png") center bottom no-repeat;
       }
       .con{
         padding-top: 40px;
@@ -511,6 +525,7 @@
       display: none;
     }
     .full-con-date{
+      display: block;
       font-size: 45px;
     }
   } //announcement
@@ -565,7 +580,7 @@
     }
     h2{
       .stack{
-        background-size: 90%;
+        //background-size: 90%;
       }
       .con{
         padding-top: 60px;
