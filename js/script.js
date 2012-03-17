@@ -80,7 +80,7 @@ var scrollfire = (function() {
 $(window).resize(function(){
   var scrollfired;
   if (Modernizr.mq('only all and (min-width: 768px)')){
-    //scrollfired = scrollfire();
+    scrollfired = scrollfire();
     //scrollUpInDis('scrollblock');
     //$('.scrollblock').removeClass('scrollblock').addClass('resetScroll');
 
