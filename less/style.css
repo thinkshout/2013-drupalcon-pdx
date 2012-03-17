@@ -5193,7 +5193,7 @@ a.thumbnail:hover {
     text-align: center;
   }
   #features li {
-    width: 64px;
+    width: 53px;
   }
   #features ul {
     *zoom: 1;
@@ -5377,7 +5377,11 @@ a.thumbnail:hover {
   }
 }
 @media (min-width: 640px) and (max-width: 768px) {
-  
+  .pdx-fact {
+    display: block;
+    font-size: 19px;
+    line-height: 21px;
+  }
 }
 @media (max-width: 768px) {
   #announcement .mobile-con-date {
@@ -5607,8 +5611,6 @@ a.thumbnail:hover {
   .pdx-fact {
     font-size: 26px;
     line-height: 35px;
-    font-family: 'LeagueGothicRegular', Arial, sans-serif;
-    color: #084e53;
   }
   .popup-image {
     -webkit-border-radius: 5px;
@@ -5629,6 +5631,9 @@ a.thumbnail:hover {
   }
   .portlandia {
     display: block;
+  }
+  .portlandia .pdx-photo {
+    width: 300px;
   }
 }
 @media (min-width: 768px) and (max-width: 980px) {
@@ -6187,6 +6192,10 @@ a.thumbnail:hover {
   .uneditable-input.span12 {
     width: 714px;
     width: 714px;
+  }
+  .pdx-fact {
+    font-size: 26px;
+    line-height: 35px;
   }
 }
 @media (max-width: 980px) {
@@ -6923,16 +6932,20 @@ h2 {
   width: auto;
   position: relative;
 }
-#draggy {
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  border-radius: 7px;
-  width: 30px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  height: 100px;
+.draggy {
+  width: 60px;
+  top: 0;
   background: rgba(0, 0, 0, 0.2) url("../img/drag.png") center center no-repeat;
+}
+#draggy-r {
+  position: absolute;
+  right: 0;
+  height: 100px;
+}
+#draggy-l {
+  position: absolute;
+  left: 0;
+  height: 100px;
 }
 #contact {
   border-top: 1px solid #ababab;
@@ -6974,7 +6987,7 @@ h2 {
 }
 
 .pdx-photo {
-  fleft;
+  float: left;
   margin: 0 20px 10px 0;
 }
 

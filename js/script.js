@@ -102,7 +102,7 @@ $(document).ready(function() {
   // });
 
   //grippy handle for touch
-  $('#draggy').height($('#map-stuff').height() - 150 - 10);
+  $('.draggy').height($('#map-stuff').height());
 
 });
 
