@@ -78,14 +78,18 @@ var scrollfire = (function() {
 })();
 
 $(window).resize(function(){
-
+  var scrollfired;
   if (Modernizr.mq('only all and (min-width: 768px)')){
-    scrollfired = scrollfire();
+    //scrollfired = scrollfire();
     //scrollUpInDis('scrollblock');
     //$('.scrollblock').removeClass('scrollblock').addClass('resetScroll');
 
   }else{
     console.log('below 768');
+    //scrollfired = scrollfire('.nothing');
+    //$(window).unbind();
+    //$(window).unbind('scrollorama');
+    //$('#announcement').removeAttr('style');
   }
 });
 
@@ -93,9 +97,9 @@ $(document).ready(function() {
   $(window).resize();
 
   var scrollEvents = $(window).data("events").scroll;
-  $.each(scrollEvents, function(key, handlerObj) {
-    console.log(handlerObj.handler);
-  });
+  // $.each(scrollEvents, function(key, handlerObj) {
+  //   console.log(handlerObj.handler);
+  // });
 
   //grippy handle for touch
   $('#draggy').height($('#map-stuff').height() - 150 - 10);
