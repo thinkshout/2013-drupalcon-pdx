@@ -5,7 +5,7 @@ var scrollfire = (function() {
   var scrollorama;
   console.log('scrollorama length: ' + scrollorama);
   return function() {
-    if (scrollorama === undefined){
+    //if (scrollorama === undefined){
       scrollorama = $.scrollorama({
         blocks: '.scrollblock',
         enablePin:false
@@ -69,10 +69,7 @@ var scrollfire = (function() {
           end:0
         }
       );
-    } //if
-    console.log('but we did hit scrollfire');
-    scrollorama = null;
-    console.log(scrollorama);
+    //} //if
     return scrollorama;
   };
 })();
@@ -87,10 +84,12 @@ $(window).resize(function(){
   }else{
     console.log('below 768');
     //scrollfired = scrollfire('.nothing');
-    //$(window).unbind();
+    $(window).unbind('scroll');
     //$(window).unbind('scrollorama');
-    //$('#announcement').removeAttr('style');
+    $('#announcement, #lift, #drop').removeAttr('style');
   }
+   //grippy handle for touch
+  $('.draggy').height($('#map-stuff').height());
 });
 
 $(document).ready(function() {
@@ -101,8 +100,7 @@ $(document).ready(function() {
   //   console.log(handlerObj.handler);
   // });
 
-  //grippy handle for touch
-  $('.draggy').height($('#map-stuff').height());
+
 
 });
 
