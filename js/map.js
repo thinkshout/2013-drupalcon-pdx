@@ -79,8 +79,15 @@ jQuery(document).ready(function() {
     marker.bindPopup(popup, {
       closeButton: false
     }).openPopup();
-    map.setView(latlon, feature['zoom']);
 
+    var mapsize = map.getSize();
+    var markerpoint = map.project(latlon, feature['zoom']);
+    // Shift the map center up 1/3 of the map container size less 20 pixels.
+    var offset = new L.Point(0, mapsize.y / 3 - 20 );
+    var centerpoint = markerpoint.subtract(offset);
+    var centerlatlon = map.unproject(centerpoint, feature['zoom']);
+    map.setView(centerlatlon, feature['zoom']);
+    
     // set active feature
     activeFeature = id;
     return false;
