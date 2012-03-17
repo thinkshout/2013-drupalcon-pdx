@@ -5387,6 +5387,9 @@ a.thumbnail:hover {
   #announcement .mobile-con-date {
     display: block;
   }
+  #announcement .full-con-date {
+    display: none;
+  }
   /*
     #announcement{
         top: @topsky+600;
