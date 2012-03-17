@@ -39,7 +39,8 @@ var features = {
 jQuery(document).ready(function() {
   var map = new L.Map('map', {
     attributionControl: false,
-    scrollWheelZoom: false
+    scrollWheelZoom: false,
+    zoomControl: false
   });
 
   // using MapQuest base layer
