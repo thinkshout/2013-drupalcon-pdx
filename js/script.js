@@ -38,7 +38,7 @@ var scrollfire = (function() {
     );
     //set drop scroll
     var announceTop = $('#announcement').position();
-    console.log(announceTop);
+    //console.log(announceTop);
     scrollorama.animate('#drop',
       {
         delay:0,
@@ -81,7 +81,7 @@ $(window).resize(function(){
   if (Modernizr.mq('only all and (min-width: 768px)')){
     scrollfire();
   }else{
-    console.log('below 768');
+    //onsole.log('below 768');
   }
    //grippy handle for touch
   $('.draggy').height($('#map-stuff').height());
