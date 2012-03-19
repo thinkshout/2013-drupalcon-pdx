@@ -2693,6 +2693,12 @@ h2 {
 #contact .row {
   position: relative;
 }
+.lt-ie9 #contact {
+  background: url("../img/gray_sand.png") left top repeat;
+}
+.lt-ie9 #contact .container {
+  background: url("../img/skyline.png") left bottom repeat-x;
+}
 /*.leaflet-popup-content-wrapper {
   width: 200%;
   height: 220px;
