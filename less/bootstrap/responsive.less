@@ -48,7 +48,7 @@
   #clouds{
     background: none;
   }
-  #farHills {
+  #hills {
     background: none;
   }
   #forest {
@@ -506,7 +506,7 @@
   #clouds{
     background: url('../img/clouds.png') repeat-x 250% @topsky - 60;
   }
-  #farHills {
+  #hills {
     background: url('../img/far-hills.png') center @topsky+125 repeat-x;
   }
   #forest {
@@ -528,6 +528,15 @@
     //top: @topsky - 60;
     top: 0;
     z-index: 50;
+    #stache{
+      background: url("../img/stache.png") left top no-repeat;
+      width: 135px;
+      height: 30px;
+      display: block;
+      position: absolute;
+      top: 210px;
+      left: 90px;
+    }
   }
   #bridge {
     width: 100%;

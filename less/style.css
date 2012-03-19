@@ -817,7 +817,7 @@ cite {
   #clouds {
     background: none;
   }
-  #farHills {
+  #hills {
     background: none;
   }
   #forest {
@@ -1224,7 +1224,7 @@ cite {
   #clouds {
     background: url('../img/clouds.png') repeat-x 250% 10px;
   }
-  #farHills {
+  #hills {
     background: url('../img/far-hills.png') center 195px repeat-x;
   }
   #forest {
@@ -1244,6 +1244,15 @@ cite {
     margin-left: -132px;
     top: 0;
     z-index: 50;
+  }
+  #drop #stache {
+    background: url("../img/stache.png") left top no-repeat;
+    width: 135px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    top: 210px;
+    left: 90px;
   }
   #bridge {
     width: 100%;
@@ -2505,6 +2514,10 @@ img {
 h1,
 h2 {
   font-weight: normal;
+}
+#drop #stache {
+  display: none;
+  text-indent: -9999px;
 }
 #announcement {
   text-transform: uppercase;

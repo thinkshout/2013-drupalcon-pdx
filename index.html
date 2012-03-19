@@ -12,15 +12,13 @@
 	<meta name="author" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
-  <!-- <link rel="stylesheet/less" href="bootstrap/responsive.less"> -->
+
+  <link rel="shortcut icon" href="favicon.ico">
 
   <!--
   <link rel="stylesheet/less" href="less/style.less">
 	<script src="js/libs/less-1.3.0.min.js"></script>
   -->
-
-	<!-- Use SimpLESS (Win/Linux/Mac) or LESS.app (Mac) to compile your .less files
-	to style.css, and replace the 2 lines above by this one: -->
 
 	<link rel="stylesheet" href="less/style.css">
 
@@ -30,27 +28,29 @@
 </head>
 <body>
 <!--[if lt IE 8]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-  <div id="mountains" class="scrollblock">
+  <section id="mountains" class="scrollblock">
     <div id="clouds">
-      <div id="farHills">
+      <div id="hills">
         <div id="forest">
           <div id="water">
             <div id="city">
               <div id="bridge">
                 <div id="lift"></div>
               </div>
-                <img id="drop" src="img/drop.png" alt="DRUPALCON PORTLAND 2013"/>
-                <div class="container main" id="announcement">
+                <div id="drop">
+                  <img src="img/drop.png" alt="DRUPALCON PORTLAND 2013"/>
+                  <aside id="stache">I can has stache?</aside>
+                </div>
+                <header class="container main" id="announcement">
                   <div class="row">
                       <h1 class="span12">Prepare for <span>Portland</span></h1>
                   </div> <!-- row -->
                   <h2 class="row">
-                    <div class="stack span6">
+                    <span class="stack span6">
                       <span class="con">DrupalCon</span>
                       <span class="portland">Portland</span>
-                    </div>
-                    <div class="year span6">2013</div>
-
+                    </span>
+                    <span class="year span6">2013</span>
                   </h2>
 
                   <div id="con-date" class="row">
@@ -58,7 +58,7 @@
                     <p class="full-con-date span12">May 20-24</p>
                   </div>
 
-                </div> <!-- /.container#announcement -->
+                </header> <!-- /.container#announcement -->
             </div> <!-- /city -->
           </div> <!-- /water -->
         </div> <!-- /forest -->
@@ -69,9 +69,9 @@
       <div id="biker-2" class="bike"></div>
       <div id="biker-3" class="bike"></div>
     </div>
-  </div> <!-- /mountains -->
+  </section> <!-- /mountains -->
 
-  <div id="map-stuff">
+  <section id="map-stuff">
     <div id="map"></div>
       <div id="features">
           <h2>You are headed to Portland. You should know:</h2>
@@ -119,7 +119,7 @@
       </div>
       <div id="draggy-r" class="draggy"></div>
       <div id="draggy-l" class="draggy"></div>
-  </div>
+  </section>
 
   <section id="contact">
     <div class="container">
