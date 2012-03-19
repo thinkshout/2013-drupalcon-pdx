@@ -327,8 +327,6 @@ FileETag None
   RewriteEngine On
 </IfModule>
 
-
-
 # ----------------------------------------------------------------------
 # Suppress or force the "www." at the beginning of URLs
 # ----------------------------------------------------------------------

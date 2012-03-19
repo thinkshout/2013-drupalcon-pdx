@@ -5093,7 +5093,7 @@ a.thumbnail:hover {
 }
 @media (max-width: 480px) {
   body {
-    background: url('../../img/480-background.jpg') no-repeat scroll top center;
+    background: url('../img/480-background.jpg') no-repeat scroll top center;
   }
   .main {
     height: 360px;
@@ -5140,7 +5140,7 @@ a.thumbnail:hover {
   }
   #announcement h2 .stack {
     height: 80px;
-    background: url("../../img/logo-ballpark-480.png") center top no-repeat;
+    background: url("../img/logo-ballpark-480.png") center top no-repeat;
   }
   #announcement h2 .stack span {
     display: block;
@@ -5306,7 +5306,7 @@ a.thumbnail:hover {
 }
 @media (min-width: 480px) and (max-width: 768px) {
   body {
-    background: url('../../img/768-background.jpg') no-repeat scroll top center;
+    background: url('../img/768-background.jpg') no-repeat scroll top center;
   }
   .main {
     height: 600px;
@@ -5332,7 +5332,7 @@ a.thumbnail:hover {
   }
   #announcement h2 .stack {
     height: 160px;
-    background: url("../../img/logo-ballpark.png") center bottom no-repeat;
+    background: url("../img/logo-ballpark.png") center bottom no-repeat;
   }
   #announcement h2 .stack span {
     display: block;
@@ -5408,7 +5408,7 @@ a.thumbnail:hover {
           .stack{
             text-align: right;
             height: 147px;
-            background: url("../../img/logo-ballpark-480.png") center top no-repeat;
+            background: url("../img/logo-ballpark-480.png") center top no-repeat;
           }
           .con{
             text-align: center;
@@ -5440,13 +5440,13 @@ a.thumbnail:hover {
     margin: 0 auto;
   }
   #contact .blurb {
-    background: url("../../img/made-in-or.png") center top no-repeat;
+    background: url("../img/made-in-or.png") center top no-repeat;
     padding-top: 335px;
   }
   #contact .blurb p {
     position: static;
     padding: 40px;
-    background: url("../../img/blurb-bg.png") left top;
+    background: url("../img/blurb-bg.png") left top;
     font-size: 14px;
     line-height: 20px;
   }
@@ -5498,30 +5498,30 @@ a.thumbnail:hover {
     min-height: 590px;
   }
   body {
-    background: #d9f2f2 url('../../img/sky.png') left -50px repeat-x;
+    background: #d9f2f2 url('../img/sky.png') left -50px repeat-x;
   }
   .main {
     height: 1195px;
   }
   #mountains {
-    background-image: url('../../img/sthelens.png'), url('../../img/hood.png');
+    background-image: url('../img/sthelens.png'), url('../img/hood.png');
     background-position: 5% 100px, 115% 115px;
     background-repeat: no-repeat;
   }
   #clouds {
-    background: url('../../img/clouds.png') repeat-x 250% 10px;
+    background: url('../img/clouds.png') repeat-x 250% 10px;
   }
   #farHills {
-    background: url('../../img/far-hills.png') center 195px repeat-x;
+    background: url('../img/far-hills.png') center 195px repeat-x;
   }
   #forest {
-    background: url('../../img/forest.png') center 215px repeat-x;
+    background: url('../img/forest.png') center 215px repeat-x;
   }
   #water {
-    background: url('../../img/water.png') center 335px repeat-x;
+    background: url('../img/water.png') center 335px repeat-x;
   }
   #city {
-    background: url('../../img/total-ground.png') center 165px repeat-x;
+    background: url('../img/total-ground.png') center 165px repeat-x;
   }
   #drop {
     position: absolute;
@@ -5537,7 +5537,7 @@ a.thumbnail:hover {
     height: 425px;
     position: absolute;
     top: 85px;
-    background: url('../../img/steel-bridge.png') top center no-repeat;
+    background: url('../img/steel-bridge.png') top center no-repeat;
     z-index: 1;
   }
   #lift {
@@ -5546,7 +5546,7 @@ a.thumbnail:hover {
     position: absolute;
     width: 342px;
     height: 240px;
-    background: url("../../img/lift.png") 0 0 no-repeat;
+    background: url("../img/lift.png") 0 0 no-repeat;
     margin-left: -176px;
     z-index: 75;
   }
@@ -5567,7 +5567,7 @@ a.thumbnail:hover {
   }
   #announcement h2 .stack {
     height: 160px;
-    background: url("../../img/logo-ballpark.png") center bottom no-repeat;
+    background: url("../img/logo-ballpark.png") center bottom no-repeat;
   }
   #announcement h2 .con {
     padding-top: 40px;
